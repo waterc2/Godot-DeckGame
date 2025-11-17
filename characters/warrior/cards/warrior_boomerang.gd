@@ -5,7 +5,7 @@ var attack_times := 3
 
 
 func get_default_tooltip() -> String:
-	return tooltip_text % [base_damage, attack_times]
+	return tr(tooltip_text) % [base_damage, attack_times]
 
 
 func get_updated_tooltip(player_modifiers: ModifierHandler, enemy_modifiers: ModifierHandler) -> String:
@@ -13,7 +13,7 @@ func get_updated_tooltip(player_modifiers: ModifierHandler, enemy_modifiers: Mod
 	if enemy_modifiers:
 		modified_dmg = enemy_modifiers.get_modified_value_by_type(modified_dmg, Modifier.Type.DMG_TAKEN)
 		
-	return tooltip_text % [modified_dmg, attack_times]
+	return tr(tooltip_text) % [modified_dmg, attack_times]
 
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler) -> void:

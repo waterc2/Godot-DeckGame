@@ -8,13 +8,10 @@
 script = ExtResource("1_afwg3")
 id = "toxic"
 type = 1
-target = 0
 cost = 1
-rarity = 0
 colour = 4
-power = 0
 exhausts = true
 icon = ExtResource("1_00gs1")
-tooltip_text = "[center]对自己造成 %d 伤害[/center]"
+tooltip_text = "CARD_TOXIN_TOOLTIP"
 sound = ExtResource("3_1w8ly")
 metadata/_custom_type_script = "uid://cfbooepxy64uy"

@@ -5,10 +5,8 @@
 
 [resource]
 script = ExtResource("2_v3jew")
-block_bonus = 3
-relic_name = "Reinforced_armor"
+relic_name = "reinforced_armor_relic_name"
 id = "reinforced_armor"
 type = 2
 icon = ExtResource("1_gefvn")
-tooltip = "[color=\\\"ffdf00\\\"]强化护甲[/color]
-在你回合结束时，获得 3 护甲。"
+tooltip = "reinforced_armor_tooltip"

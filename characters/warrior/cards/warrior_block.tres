@@ -8,12 +8,7 @@
 script = ExtResource("1_54tpb")
 id = "warrior_block"
 type = 1
-target = 0
 cost = 1
-rarity = 0
-colour = 0
-power = 0
-exhausts = false
 icon = ExtResource("1_2kbco")
-tooltip_text = "[center]获得 [color=\"0044ff\"]%s[/color] 护盾.[/center]"
+tooltip_text = "warrior_block_tooltip_text"
 sound = ExtResource("3_7vbpv")

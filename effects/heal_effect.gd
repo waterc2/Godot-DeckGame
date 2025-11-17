@@ -10,4 +10,4 @@ func execute(targets: Array) -> void:
             continue
         if target is Enemy or target is Player:
             target.stats.health += amount
-            SFXPlayer.play(sound)
+            SFXPlayer.play_sfx(sound)

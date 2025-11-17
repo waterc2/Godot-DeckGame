@@ -7,8 +7,8 @@
 
 [resource]
 script = ExtResource("1_5r6jl")
-character_name = "Warrior"
-description = "Likes to slice things."
+character_name = "CHARACTER_WARRIOR_NAME"
+description = "CHARACTER_WARRIOR_DESCRIPTION"
 portrait = ExtResource("1_2sbui")
 starting_deck = ExtResource("3_dtd3m")
 draftable_cards = ExtResource("2_4t1lx")

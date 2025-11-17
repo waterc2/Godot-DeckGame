@@ -5,10 +5,6 @@ const STRENGTH_STATUS = preload("res://statuses/strength.tres")
 
 var stacks_per_turn := 1
 
-
-func get_tooltip() -> String:
-	return tooltip % stacks_per_turn
-
 func apply_status(target: Node) -> void:
 	print("applied true str form")
 	

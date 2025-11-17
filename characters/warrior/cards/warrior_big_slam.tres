@@ -7,13 +7,9 @@
 [resource]
 script = ExtResource("2_epla8")
 id = "warrior_big_slam"
-type = 0
 target = 1
 cost = 2
 rarity = 1
-colour = 0
-power = 0
-exhausts = false
 icon = ExtResource("1_lwc11")
-tooltip_text = "[center]造成 [color=\"ff0000\"]%s[/color] 伤害, %s [color=\"ffdf00\"]重伤[/color].[/center]"
+tooltip_text = "warrior_big_slam_tooltip_text"
 sound = ExtResource("3_swkys")

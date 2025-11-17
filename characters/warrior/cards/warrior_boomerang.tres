@@ -15,5 +15,5 @@ colour = null
 power = null
 exhausts = null
 icon = ExtResource("1_cd3dk")
-tooltip_text = "[center]对随机敌人造成 [color=\"ff0000\"]%s[/color] 伤害 %s 次.[/center]"
+tooltip_text = "CARD_BOOMERANG_TOOLTIP"
 sound = ExtResource("3_0u2ll")

@@ -5,10 +5,8 @@
 
 [resource]
 script = ExtResource("2_ebo1d")
-discount = -0.25
-relic_name = "Coupons"
+relic_name = "RELIC_COUPONS_NAME"
 id = "coupons"
 type = 4
 icon = ExtResource("1_oy3e3")
-tooltip = "[color=\\\"ffdf00\\\"]优惠券[/color]
-商店全部道具75折"
+tooltip = "RELIC_COUPONS_TOOLTIP"

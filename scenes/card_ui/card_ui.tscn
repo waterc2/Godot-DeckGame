@@ -23,6 +23,7 @@ theme = ExtResource("1_qykhk")
 script = ExtResource("2_ew8p4")
 
 [node name="CardVisuals" parent="." instance=ExtResource("9_v6d6y")]
+layout_mode = 0
 mouse_filter = 2
 
 [node name="DropPointDetector" type="Area2D" parent="."]

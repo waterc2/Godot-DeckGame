@@ -5,5 +5,4 @@
 
 [resource]
 script = ExtResource("1_sfn38")
-type = 0
 picked_character = ExtResource("1_a85sn")

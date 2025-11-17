@@ -28,6 +28,6 @@ func perform_action() -> void:
 	status_effect.status = muscle
 	status_effect.execute([enemy])
 	
-	SFXPlayer.play(sound)
+	SFXPlayer.play_sfx(sound)
 
 	Events.enemy_action_completed.emit(enemy)

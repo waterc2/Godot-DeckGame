@@ -6,10 +6,8 @@
 [resource]
 script = ExtResource("2_qocnk")
 id = "weak"
-type = 0
 stack_type = 2
 can_expire = true
 duration = 1
-stacks = 0
 icon = ExtResource("1_ui20a")
-tooltip = "虚弱：造成的伤害减少25%%，持续%s回合。"
+tooltip = "weak_tooltip"

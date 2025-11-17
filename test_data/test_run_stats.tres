@@ -5,8 +5,4 @@
 [resource]
 script = ExtResource("1_sh0jr")
 gold = 700
-card_rewards = 3
-common_weight = 6.0
-uncommon_weight = 3.7
-rare_weight = 0.3
 metadata/_custom_type_script = "uid://dxx6ls0r7cctx"

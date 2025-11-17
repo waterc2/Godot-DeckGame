@@ -6,14 +6,10 @@
 
 [resource]
 script = ExtResource("1_f47rk")
-id = ""
 type = 1
-target = 0
 cost = 2
 rarity = 2
-colour = 0
-power = 0
 exhausts = true
 icon = ExtResource("1_wu7m0")
-tooltip_text = "[center]恢复 [color=\"db396f\"]%s[/color] 生命.[/center] 损坏"
+tooltip_text = "warrior_heal_tooltip_text"
 sound = ExtResource("3_spwmr")

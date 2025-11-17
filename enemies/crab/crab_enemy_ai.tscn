@@ -15,19 +15,16 @@
 script = ExtResource("4_tldjo")
 base_text = "%s"
 icon = ExtResource("3_kspda")
-tooltip = ""
 
 [sub_resource type="Resource" id="Resource_5mbko"]
 script = ExtResource("4_tldjo")
 base_text = "%s"
 icon = ExtResource("6_wgblj")
-tooltip = ""
 
 [sub_resource type="Resource" id="Resource_2ro40"]
 script = ExtResource("4_tldjo")
 base_text = "%s"
 icon = ExtResource("6_pokmc")
-tooltip = ""
 
 [node name="CrabEnemyAI" type="Node"]
 script = ExtResource("1_uqetp")

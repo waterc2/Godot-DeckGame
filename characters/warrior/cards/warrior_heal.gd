@@ -4,11 +4,11 @@ var base_heal := 10
 
 
 func get_default_tooltip() -> String:
-	return tooltip_text % base_heal
+	return tr(tooltip_text) % base_heal
 	
 
 func get_updated_tooltip(_player_modifiers: ModifierHandler, _enemy_modifiers: ModifierHandler) -> String:
-	return tooltip_text % base_heal
+	return tr(tooltip_text) % base_heal
 
 
 func apply_effects(targets: Array[Node], _modifiers: ModifierHandler) -> void:

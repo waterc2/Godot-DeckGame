@@ -30,8 +30,6 @@ size = Vector2(256, 100)
 
 [sub_resource type="Resource" id="Resource_m53fq"]
 script = ExtResource("8_jv4c0")
-character_name = ""
-description = ""
 cards_per_turn = 4
 max_mana = 3
 max_health = 40
@@ -132,7 +130,7 @@ offset_bottom = -61.0
 grow_horizontal = 0
 grow_vertical = 0
 theme = ExtResource("15_fkra7")
-text = "结束回合"
+text = "End Turn"
 
 [node name="DrawPileButton" parent="BattleUI" node_paths=PackedStringArray("counter") instance=ExtResource("19_1bs2l")]
 unique_name_in_owner = true

@@ -5,10 +5,7 @@
 
 [resource]
 script = ExtResource("2_yalg6")
-damage = 2
-relic_name = "Explosive_barrel"
+relic_name = "RELIC_EXPLOSIVE_BARREL_NAME"
 id = "explosive_barrel"
-type = 0
 icon = ExtResource("1_3x3vn")
-tooltip = "[color=\\\"ffdf00\\\"]爆破筒[/color]
-在回合开始时，对所有敌人造成 2 点伤害."
+tooltip = "RELIC_EXPLOSIVE_BARREL_TOOLTIP"

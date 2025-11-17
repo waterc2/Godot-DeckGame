@@ -29,7 +29,11 @@ func apply_status(_target: Node) -> void:
 
 
 func get_tooltip() -> String:
-	return tooltip
+	var translated_text = tr(tooltip)
+	if translated_text.contains("%s"):
+		return translated_text.replace("%s", "{0}").format([duration])
+	
+	return translated_text
 
 
 func set_duration(new_duration: int) -> void:

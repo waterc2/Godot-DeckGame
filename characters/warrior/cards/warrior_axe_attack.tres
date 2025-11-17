@@ -7,13 +7,8 @@
 [resource]
 script = ExtResource("1_eo16l")
 id = "warrior_axe_attack"
-type = 0
 target = 1
 cost = 1
-rarity = 0
-colour = 0
-power = 0
-exhausts = false
 icon = ExtResource("1_rvmda")
-tooltip_text = "[center]造成 [color=\"ff0000\"]%s[/color] 伤害.[/center]"
+tooltip_text = "CARD_WARRIOR_AXE_ATTACK_TOOLTIP"
 sound = ExtResource("3_p23or")

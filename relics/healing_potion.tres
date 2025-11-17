@@ -5,10 +5,8 @@
 
 [resource]
 script = ExtResource("1_je4sh")
-heal_amount = 6
-relic_name = "Healing_potion"
+relic_name = "RELIC_HEALING_POTION_NAME"
 id = "healing_potion"
 type = 3
 icon = ExtResource("1_djbis")
-tooltip = "[color=\\\"ffdf00\\\"]无尽治疗瓶[/color]
-在战斗结束时，恢复 6 点生命。"
+tooltip = "RELIC_HEALING_POTION_TOOLTIP"

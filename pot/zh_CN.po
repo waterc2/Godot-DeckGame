@@ -1,0 +1,290 @@
+# Chinese (China) translation for DeckGame
+# Copyright (C) 2025
+# This file is distributed under the same license as the DeckGame package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DeckGame\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Language: zh_CN\n"
+
+#: scenes/run/run.tscn
+msgid "Map"
+msgstr "地图"
+
+#: scenes/run/run.tscn
+msgid "Battle"
+msgstr "战斗"
+
+#: scenes/run/run.tscn
+msgid "Shop"
+msgstr "商店"
+
+#: scenes/run/run.tscn
+msgid "Treasure"
+msgstr "宝藏"
+
+#: scenes/run/run.tscn
+msgid "Reward"
+msgstr "奖励"
+
+#: scenes/run/run.tscn
+msgid "Campfire"
+msgstr "营火"
+
+#: scenes/run/run.tscn
+msgid "Paused"
+msgstr "已暂停"
+
+#: scenes/run/run.tscn
+msgid "Back"
+msgstr "返回"
+
+#: scenes/run/run.tscn
+msgid "Main Menu"
+msgstr "主菜单"
+
+#: characters/warrior/cards/warrior_boomerang.tres
+msgid "CARD_BOOMERANG_TOOLTIP"
+msgstr "[center]对随机敌人造成 [color=\"ff0000\"]%s[/color] 伤害 %s 次.[/center]"
+
+#: scenes/run/run.tscn
+#: scenes/shop/shop.tscn
+msgid "Shop"
+msgstr "商店"
+
+#: scenes/run/run.tscn
+#: scenes/treasure/treasure.tscn
+msgid "Treasure"
+msgstr "宝藏"
+
+#: scenes/run/run.tscn
+#: scenes/campfire/campfire.tscn
+msgid "Campfire"
+msgstr "营火"
+
+#: scenes/run/run.tscn
+#: scenes/relic_handler/relic_tooltip.tscn
+#: scenes/ui/card_pile_view.tscn
+#: scenes/ui/status_view.tscn
+msgid "Back"
+msgstr "返回"
+
+#: scenes/run/run.tscn
+#: scenes/ui/battle_over_panel.tscn
+#: scenes/win_screen/win_screen.tscn
+msgid "Main Menu"
+msgstr "主菜单"
+
+#: scenes/run/run.tscn
+msgid "Switch Language"
+msgstr "切换语言"
+
+#: scenes/battle_reward/battle_reward.tscn
+msgid "Rewards"
+msgstr "奖励"
+
+#: scenes/battle_reward/battle_reward.tscn
+msgid "123"
+msgstr "123"
+
+#: scenes/battle_reward/battle_reward.tscn
+#: scenes/ui/main_menu.tscn
+msgid "Continue"
+msgstr "继续"
+
+#: scenes/campfire/campfire.tscn
+msgid "Rest"
+msgstr "休息"
+
+#: scenes/campfire/campfire.tscn
+msgid "+ 30% HP"
+msgstr "+ 30% 生命值"
+
+#: scenes/relic_handler/relic_tooltip.tscn
+msgid "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
+msgstr "遗物提示占位符"
+
+#: scenes/shop/shop.tscn
+msgid "Leave"
+msgstr "离开"
+
+#: scenes/shop/shop_card.tscn
+#: scenes/shop/shop_relic.tscn
+msgid "Buy"
+msgstr "购买"
+
+#: scenes/ui/battle_over_panel.tscn
+msgid "Victorious!"
+msgstr "胜利！"
+
+#: scenes/ui/battle_over_panel.tscn
+msgid "Awesome!"
+msgstr "太棒了！"
+
+#: scenes/ui/card_pile_view.tscn
+msgid "Discard Pile"
+msgstr "弃牌堆"
+
+#: scenes/ui/card_rewards.tscn
+msgid "Skip"
+msgstr "跳过"
+
+#: scenes/ui/card_rewards.tscn
+msgid "Take"
+msgstr "拾取"
+
+#: scenes/ui/card_tooltip_popup.tscn
+msgid "[center]Heal for [color=\"db396f\"]10[/color] HP.[/center]"
+msgstr "[center]恢复 [color=\"db396f\"]10[/color] 生命.[/center]"
+
+#: scenes/ui/card_visuals.tscn
+#: scenes/ui/gold_ui.gd
+msgid "0"
+msgstr "0"
+#: scenes/ui/character_selector.tscn
+msgid "Warrior"
+msgstr "战士"
+
+#: scenes/ui/character_selector.tscn
+msgid "Likes to slice things up."
+msgstr "喜欢把东西切成碎片。"
+
+#: scenes/ui/character_selector.tscn
+msgid "Start\n"
+msgstr "开始\n"
+
+#: scenes/ui/health_ui.tscn
+msgid "66"
+msgstr "66"
+
+#: scenes/ui/health_ui.tscn
+msgid "/66"
+msgstr "/66"
+
+#: scenes/ui/main_menu.tscn
+msgid "My First\nNot Roguelike Deckbuild Game"
+msgstr "我的第一个\n非 Roguelike 卡牌构筑游戏"
+
+#: scenes/ui/main_menu.tscn
+msgid "NewRun"
+msgstr "开始新游戏"
+
+#: scenes/ui/main_menu.tscn
+msgid "Exit"
+msgstr "退出"
+
+#: scenes/ui/mana_ui.tscn
+msgid "3/3"
+msgstr "3/3"
+
+#: scenes/ui/reward_button.tscn
+msgid "99 Gold"
+msgstr "99 金币"
+
+#: scenes/ui/tooltip.tscn
+msgid "Tooltip description Chinese test\nTest second line content\nTest third line content 31231232312312312321312312421432r343243"
+msgstr "提示框描述 中文测试\n测试第二行内容\n测试第三行内容 31231232312312312321312312421432r343243"
+
+#: scenes/win_screen/win_screen.tscn
+msgid "You are victorious!"
+msgstr "你胜利了！"
+
+#: common_cards/toxin.gd
+msgid "[center]Deal %d damage to yourself[/center]"
+msgstr "[center]对自己造成 %s 伤害[/center]"
+
+#: characters/warrior/warrior.tres
+msgid "CHARACTER_WARRIOR_NAME"
+msgstr "战士"
+
+#: characters/warrior/warrior.tres
+msgid "CHARACTER_WARRIOR_DESCRIPTION"
+msgstr "喜欢切东西。"
+
+#: relics/coupons.tres
+msgid "RELIC_COUPONS_NAME"
+msgstr "优惠券"
+
+#: relics/coupons.tres
+msgid "RELIC_COUPONS_TOOLTIP"
+msgstr "[color=\"ffdf00\"]优惠券[/color]\n商店全部道具75折"
+
+#: statuses/strength.tres
+msgid "STATUS_STRENGTH_TOOLTIP"
+msgstr "强壮：每次攻击增加%s伤害。"
+
+#: characters/warrior/cards/warrior_axe_attack.tres
+msgid "CARD_WARRIOR_AXE_ATTACK_TOOLTIP"
+msgstr "[center]造成 [color=\"ff0000\"]%s[/color] 伤害.[/center]"
+
+#: common_cards/toxin.tres
+msgid "CARD_TOXIN_TOOLTIP"
+msgstr "[center]对自己造成 %s 伤害[/center]"
+
+#: relics/explosive_barrel.tres
+msgid "RELIC_EXPLOSIVE_BARREL_NAME"
+msgstr "爆破筒"
+
+#: relics/explosive_barrel.tres
+msgid "RELIC_EXPLOSIVE_BARREL_TOOLTIP"
+msgstr "[color=\"ffdf00\"]爆破筒[/color]\n在回合开始时，对所有敌人造成 2 点伤害."
+
+#: relics/healing_potion.tres
+msgid "RELIC_HEALING_POTION_NAME"
+msgstr "无尽治疗瓶"
+
+#: relics/healing_potion.tres
+msgid "RELIC_HEALING_POTION_TOOLTIP"
+msgstr "[color=\"ffdf00\"]无尽治疗瓶[/color]\n在战斗结束时，恢复 6 点生命。"
+
+msgid "warrior_big_slam_tooltip_text"
+msgstr "[center]造成 [color=\"ff0000\"]%s[/color] 伤害, %s [color=\"ffdf00\"]重伤[/color].[/center]"
+
+msgid "assassin_character_name"
+msgstr "Assassin"
+
+msgid "assassin_description"
+msgstr "Sneaky"
+
+msgid "warrior_block_tooltip_text"
+msgstr "[center]获得 [color=\"0044ff\"]%s[/color] 护盾.[/center]"
+
+msgid "warrior_heal_tooltip_text"
+msgstr "[center]恢复 [color=\"db396f\"]%s[/color] 生命.[/center] 损坏"
+
+msgid "warrior_quick_strike_tooltip_text"
+msgstr "[center]造成 [color=\"ff0000\"]%s[/color] 伤害.[/center]"
+
+msgid "warrior_slash_tooltip_text"
+msgstr "[center]对所有敌人造成 [color=\"ff0000\"]%s[/color] 伤害.[/center]"
+
+msgid "warrior_true_strengh_tooltip_text"
+msgstr "[center]在每回合开始时，获得 %s [color=\"ffdf00\"]强壮[/color].[/center] 损坏"
+
+msgid "wizard_character_name"
+msgstr "Wizard"
+
+msgid "wizard_description"
+msgstr "Years of wisdom."
+
+msgid "mana_potion_tooltip"
+msgstr "[color=\"ffdf00\"]充能魔力瓶[/color]\n战斗开始时，获得 1 魔力。"
+
+msgid "reinforced_armor_relic_name"
+msgstr "Reinforced_armor"
+
+msgid "reinforced_armor_tooltip"
+msgstr "[color=\"ffdf00\"]强化护甲[/color]\n在你回合结束时，获得 3 护甲。"
+
+msgid "true_strength_form_tooltip"
+msgstr "真实之力：每回合增加%s强壮。"
+
+msgid "vulnerable_tooltip"
+msgstr "破甲：收到的伤害增加40%，持续%s回合。"
+
+msgid "weak_tooltip"
+msgstr "虚弱：造成的伤害减少25%%，持续%s回合。"

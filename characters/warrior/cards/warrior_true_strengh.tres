@@ -8,12 +8,9 @@
 script = ExtResource("2_8mdoa")
 id = "warrior_true_strengh"
 type = 2
-target = 0
 cost = 2
 rarity = 2
-colour = 0
-power = 0
 exhausts = true
 icon = ExtResource("1_m4oee")
-tooltip_text = "[center]在每回合开始时，获得 %s [color=\"ffdf00\"]强壮[/color].[/center] 损坏"
+tooltip_text = "warrior_true_strengh_tooltip_text"
 sound = ExtResource("3_vnqu1")

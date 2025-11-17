@@ -1,0 +1,387 @@
+# LANGUAGE translation for DeckGame for the following files:
+# res://scenes/run/run.gd
+# res://scenes/run/run.tscn
+# res://scenes/run/pause_menu.gd
+# res://scenes/battle/battle.gd
+# res://scenes/battle/battle.tscn
+# res://scenes/battle_reward/battle_reward.gd
+# res://scenes/battle_reward/battle_reward.tscn
+# res://scenes/campfire/campfire.gd
+# res://scenes/campfire/campfire.tscn
+# res://scenes/card_target_selector/card_arc.tscn
+# res://scenes/card_target_selector/card_target_selector.gd
+# res://scenes/card_target_selector/card_target_selector.tscn
+# res://scenes/card_ui/card_state_machine.gd
+# res://scenes/card_ui/card_ui.gd
+# res://scenes/card_ui/card_ui.tscn
+# res://scenes/card_ui/card_states/card_aiming_state.gd
+# res://scenes/card_ui/card_states/card_base_state.gd
+# res://scenes/card_ui/card_states/card_clicked_state.gd
+# res://scenes/card_ui/card_states/card_dragging_state.gd
+# res://scenes/card_ui/card_states/card_released_state.gd
+# res://scenes/card_ui/card_states/card_state.gd
+# res://scenes/enemy/enemy.gd
+# res://scenes/enemy/enemy.tscn
+# res://scenes/enemy/enemy_action.gd
+# res://scenes/enemy/enemy_action_picker.gd
+# res://scenes/enemy/enemy_action_picker.tscn
+# res://scenes/enemy/enemy_handler.gd
+# res://scenes/map/map.gd
+# res://scenes/map/map.tscn
+# res://scenes/map/map_generator.gd
+# res://scenes/map/map_line.tscn
+# res://scenes/map/map_room.gd
+# res://scenes/map/map_room.tscn
+# res://scenes/modifier_handler/modifier.gd
+# res://scenes/modifier_handler/modifier.tscn
+# res://scenes/modifier_handler/modifier_handler.gd
+# res://scenes/modifier_handler/modifier_handler.tscn
+# res://scenes/modifier_handler/modifier_value.gd
+# res://scenes/modifier_handler/modifier_value.tscn
+# res://scenes/player/player.gd
+# res://scenes/player/player.tscn
+# res://scenes/player/player_handler.gd
+# res://scenes/relic_handler/relics_control.gd
+# res://scenes/relic_handler/relic_handler.gd
+# res://scenes/relic_handler/relic_handler.tscn
+# res://scenes/relic_handler/relic_tooltip.gd
+# res://scenes/relic_handler/relic_tooltip.tscn
+# res://scenes/relic_handler/relic_ui.gd
+# res://scenes/relic_handler/relic_ui.tscn
+# res://scenes/shop/shop.gd
+# res://scenes/shop/shop.tscn
+# res://scenes/shop/shop_card.gd
+# res://scenes/shop/shop_card.tscn
+# res://scenes/shop/shop_relic.gd
+# res://scenes/shop/shop_relic.tscn
+# res://scenes/status_handler/status_handler.gd
+# res://scenes/status_handler/status_handler.tscn
+# res://scenes/status_handler/status_ui.gd
+# res://scenes/status_handler/status_ui.tscn
+# res://scenes/treasure/treasure.gd
+# res://scenes/treasure/treasure.tscn
+# res://scenes/ui/battle_over_panel.gd
+# res://scenes/ui/battle_over_panel.tscn
+# res://scenes/ui/battle_ui.gd
+# res://scenes/ui/card_menu_ui.gd
+# res://scenes/ui/card_menu_ui.tscn
+# res://scenes/ui/card_pile_opener.gd
+# res://scenes/ui/card_pile_opener.tscn
+# res://scenes/ui/card_pile_view.gd
+# res://scenes/ui/card_pile_view.tscn
+# res://scenes/ui/card_rewards.gd
+# res://scenes/ui/card_rewards.tscn
+# res://scenes/ui/card_tooltip_popup.gd
+# res://scenes/ui/card_tooltip_popup.tscn
+# res://scenes/ui/card_visuals.gd
+# res://scenes/ui/card_visuals.tscn
+# res://scenes/ui/character_selector.gd
+# res://scenes/ui/character_selector.tscn
+# res://scenes/ui/gold_ui.gd
+# res://scenes/ui/gold_ui.tscn
+# res://scenes/ui/hand.gd
+# res://scenes/ui/health_ui.gd
+# res://scenes/ui/health_ui.tscn
+# res://scenes/ui/intent_ui.gd
+# res://scenes/ui/intent_ui.tscn
+# res://scenes/ui/main_menu.gd
+# res://scenes/ui/main_menu.tscn
+# res://scenes/ui/mana_ui.gd
+# res://scenes/ui/mana_ui.tscn
+# res://scenes/ui/red_flash.gd
+# res://scenes/ui/reward_button.gd
+# res://scenes/ui/reward_button.tscn
+# res://scenes/ui/stats_ui.gd
+# res://scenes/ui/stats_ui.tscn
+# res://scenes/ui/status_tooltip.gd
+# res://scenes/ui/status_tooltip.tscn
+# res://scenes/ui/status_view.gd
+# res://scenes/ui/status_view.tscn
+# res://scenes/ui/tooltip.gd
+# res://scenes/ui/tooltip.tscn
+# res://scenes/win_screen/win_screen.gd
+# res://scenes/win_screen/win_screen.tscn
+# res://characters/warrior/cards/warrior_axe_attack.gd
+# res://characters/warrior/cards/warrior_big_slam.gd
+# res://characters/warrior/cards/warrior_block.gd
+# res://characters/warrior/cards/warrior_boomerang.gd
+# res://characters/warrior/cards/warrior_heal.gd
+# res://characters/warrior/cards/warrior_quick_strike.gd
+# res://characters/warrior/cards/warrior_slash.gd
+# res://characters/warrior/cards/warrior_true_strengh.gd
+# res://common_cards/toxin.gd
+# res://custom_resources/battle_stats.gd
+# res://custom_resources/battle_stats_pool.gd
+# res://custom_resources/card.gd
+# res://custom_resources/card_pile.gd
+# res://custom_resources/character_stats.gd
+# res://custom_resources/effect.gd
+# res://custom_resources/enemy_stats.gd
+# res://custom_resources/intent.gd
+# res://custom_resources/relic.gd
+# res://custom_resources/room.gd
+# res://custom_resources/run_startup.gd
+# res://custom_resources/run_status.gd
+# res://custom_resources/save_game.gd
+# res://custom_resources/stats.gd
+# res://custom_resources/status.gd
+# res://effects/block_effect.gd
+# res://effects/damage_effect.gd
+# res://effects/heal_effect.gd
+# res://effects/status_effect.gd
+# res://enemies/bat/bat_attack_action.gd
+# res://enemies/bat/bat_block_action.gd
+# res://enemies/bat/bat_blood_sucking_action.gd
+# res://enemies/bat/bat_enemy_ai.tscn
+# res://enemies/crab/crab_attack_action.gd
+# res://enemies/crab/crab_block_action.gd
+# res://enemies/crab/crab_enemy_ai.tscn
+# res://enemies/crab/crab_mega_block_action.gd
+# res://enemies/toxic_ghost/toxic_ghost_ai.tscn
+# res://enemies/toxic_ghost/toxic_ghost_attack_action.gd
+# res://enemies/toxic_ghost/toxic_ghost_block_action.gd
+# res://enemies/toxic_ghost/toxic_ghost_muscle_buff_action.gd
+# res://global/events.gd
+# res://global/music_player.tscn
+# res://global/rng.gd
+# res://global/sfx_player.tscn
+# res://global/shaker.gd
+# res://global/sound_player.gd
+# res://relics/coupons.gd
+# res://relics/explosive_barrel.gd
+# res://relics/healing_potion.gd
+# res://relics/mana_potion.gd
+# res://relics/reinforced_armor.gd
+# res://script_tempates/Node/card_template.gd
+# res://script_tempates/Node/effect_template.gd
+# res://script_tempates/Node/enemy_action_template.gd
+# res://script_tempates/Node/relic_template.gd
+# res://script_tempates/Node/status_template.gd
+# res://statuses/strength.gd
+# res://statuses/true_strength_form.gd
+# res://statuses/vulnerable.gd
+# res://statuses/weak.gd
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DeckGame\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: scenes/run/run.tscn
+msgid "Map"
+msgstr ""
+
+#: scenes/run/run.tscn
+msgid "Battle"
+msgstr ""
+
+#: scenes/run/run.tscn
+#: scenes/shop/shop.tscn
+msgid "Shop"
+msgstr ""
+
+#: scenes/run/run.tscn
+#: scenes/treasure/treasure.tscn
+msgid "Treasure"
+msgstr ""
+
+#: scenes/run/run.tscn
+msgid "Reward"
+msgstr ""
+
+#: scenes/run/run.tscn
+#: scenes/campfire/campfire.tscn
+msgid "Campfire"
+msgstr ""
+
+#: scenes/run/run.tscn
+msgid "77\n"
+msgstr ""
+
+#: scenes/run/run.tscn
+msgid "Paused"
+msgstr ""
+
+#: scenes/run/run.tscn
+#: scenes/relic_handler/relic_tooltip.tscn
+#: scenes/ui/card_pile_view.tscn
+#: scenes/ui/status_view.tscn
+msgid "Back"
+msgstr ""
+
+#: scenes/run/run.tscn
+#: scenes/ui/battle_over_panel.tscn
+#: scenes/win_screen/win_screen.tscn
+msgid "Main Menu"
+msgstr ""
+
+#: scenes/run/run.tscn
+msgid "Switch Language"
+msgstr ""
+
+#: scenes/battle/battle.tscn
+msgid "结束回合"
+msgstr ""
+
+#: scenes/battle/battle.tscn
+msgid "99"
+msgstr ""
+
+#: scenes/battle/battle.tscn
+msgid "88"
+msgstr ""
+
+#: scenes/battle_reward/battle_reward.tscn
+msgid "Rewards"
+msgstr ""
+
+#: scenes/battle_reward/battle_reward.tscn
+msgid "123"
+msgstr ""
+
+#: scenes/battle_reward/battle_reward.tscn
+msgid "Add New Card"
+msgstr ""
+
+#: scenes/battle_reward/battle_reward.tscn
+#: scenes/ui/main_menu.tscn
+msgid "Continue"
+msgstr ""
+
+#: scenes/campfire/campfire.tscn
+msgid "Rest"
+msgstr ""
+
+#: scenes/campfire/campfire.tscn
+msgid "+ 30% HP"
+msgstr ""
+
+#: scenes/relic_handler/relic_tooltip.tscn
+msgid "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
+msgstr ""
+
+#: scenes/shop/shop.tscn
+msgid "Leave"
+msgstr ""
+
+#: scenes/shop/shop_card.tscn
+#: scenes/shop/shop_relic.tscn
+#: scenes/status_handler/status_ui.tscn
+msgid "999"
+msgstr ""
+
+#: scenes/shop/shop_card.tscn
+#: scenes/shop/shop_relic.tscn
+msgid "Buy"
+msgstr ""
+
+#: scenes/status_handler/status_ui.tscn
+msgid "888"
+msgstr ""
+
+#: scenes/ui/battle_over_panel.tscn
+msgid "Victorious!"
+msgstr ""
+
+#: scenes/ui/battle_over_panel.tscn
+msgid "Awesome!"
+msgstr ""
+
+#: scenes/ui/card_pile_view.tscn
+msgid "Discard Pile"
+msgstr ""
+
+#: scenes/ui/card_rewards.tscn
+msgid "Skip"
+msgstr ""
+
+#: scenes/ui/card_rewards.tscn
+msgid "Take"
+msgstr ""
+
+#: scenes/ui/card_tooltip_popup.tscn
+msgid "[center]恢复 [color=\"db396f\"]10[/color] 生命.[/center]"
+msgstr ""
+
+#: scenes/ui/card_visuals.tscn
+msgid "2"
+msgstr ""
+
+#: scenes/ui/card_visuals.tscn
+#: scenes/ui/gold_ui.gd
+msgid "0"
+msgstr ""
+
+#: scenes/ui/character_selector.tscn
+msgid "Warrior"
+msgstr ""
+
+#: scenes/ui/character_selector.tscn
+msgid "Likes to slice things up."
+msgstr ""
+
+#: scenes/ui/character_selector.tscn
+msgid "Start\n"
+msgstr ""
+
+#: scenes/ui/gold_ui.tscn
+msgid "9999"
+msgstr ""
+
+#: scenes/ui/health_ui.tscn
+msgid "66"
+msgstr ""
+
+#: scenes/ui/health_ui.tscn
+msgid "/66"
+msgstr ""
+
+#: scenes/ui/intent_ui.tscn
+msgid "7"
+msgstr ""
+
+#: scenes/ui/main_menu.tscn
+msgid ""
+"My First\n"
+"Not Roguelike Deckbuild Game"
+msgstr ""
+
+#: scenes/ui/main_menu.tscn
+msgid "NewRun"
+msgstr ""
+
+#: scenes/ui/main_menu.tscn
+msgid "Exit"
+msgstr ""
+
+#: scenes/ui/mana_ui.tscn
+msgid "3/3"
+msgstr ""
+
+#: scenes/ui/reward_button.tscn
+msgid "99 Gold"
+msgstr ""
+
+#: scenes/ui/stats_ui.tscn
+msgid "10\n"
+msgstr ""
+
+#: scenes/ui/tooltip.tscn
+msgid ""
+"Tooltip decription 测试中文\n"
+"测试第二行内容\n"
+"测试第3行内容31231232312312312321312312421432r343243"
+msgstr ""
+
+#: scenes/win_screen/win_screen.tscn
+msgid "You are victorious!"
+msgstr ""
+
+#: common_cards/toxin.gd
+msgid "[center]对自己造成 %d 伤害[/center]"
+msgstr ""

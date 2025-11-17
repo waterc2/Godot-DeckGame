@@ -5,9 +5,8 @@
 
 [resource]
 script = ExtResource("1_elp6x")
-relic_name = "Mana_potion"
+relic_name = "RELIC_MANA_POTION_NAME"
 id = "mana_potion"
 type = 1
 icon = ExtResource("1_gxs4i")
-tooltip = "[color=\\\"ffdf00\\\"]充能魔力瓶[/color]
-战斗开始时，获得 1 魔力。"
+tooltip = "mana_potion_tooltip"

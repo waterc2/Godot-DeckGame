@@ -28,7 +28,6 @@ tooltip = "吸血，造成%s 伤害并恢复相应的生命。"
 script = ExtResource("4_7i2b2")
 base_text = "%s"
 icon = ExtResource("7_83tf1")
-tooltip = ""
 
 [node name="BatEnemyAI" type="Node"]
 script = ExtResource("1_vc2im")

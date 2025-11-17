@@ -13,9 +13,7 @@
 
 [sub_resource type="Resource" id="Resource_460vo"]
 script = ExtResource("3_a0hhr")
-base_text = ""
 icon = ExtResource("2_4nfct")
-tooltip = ""
 metadata/_custom_type_script = "uid://cwfhdvcw1qpee"
 
 [sub_resource type="Resource" id="Resource_hqwas"]
@@ -27,9 +25,7 @@ metadata/_custom_type_script = "uid://cwfhdvcw1qpee"
 
 [sub_resource type="Resource" id="Resource_n3j28"]
 script = ExtResource("3_a0hhr")
-base_text = ""
 icon = ExtResource("9_hqwas")
-tooltip = ""
 metadata/_custom_type_script = "uid://cwfhdvcw1qpee"
 
 [node name="ToxicGhostAI" type="Node"]
