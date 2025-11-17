@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://cytyef5rxqgk2"]
+
+[ext_resource type="Script" uid="uid://ritdc1yp3bjn" path="res://characters/warrior/cards/warrior_quick_strike.gd" id="1_kwmb5"]
+[ext_resource type="Texture2D" uid="uid://caom6d4v84fsf" path="res://art/cards/kunai.png" id="1_y4e3g"]
+[ext_resource type="AudioStream" uid="uid://b1vpjjmi5cj3n" path="res://art/axe.ogg" id="3_6dix6"]
+
+[resource]
+script = ExtResource("1_kwmb5")
+id = "warrior_quick_strike"
+type = 0
+target = 1
+cost = 1
+rarity = 1
+colour = 0
+power = 0
+exhausts = false
+icon = ExtResource("1_y4e3g")
+tooltip_text = "[center]造成 [color=\"ff0000\"]%s[/color] 伤害.[/center]"
+sound = ExtResource("3_6dix6")

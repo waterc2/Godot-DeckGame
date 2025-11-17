@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://c6knsk5wxp0tv"]
+
+[ext_resource type="Texture2D" uid="uid://dpfqok8tuy4r7" path="res://art/tile_0084.png" id="1_nvukq"]
+[ext_resource type="Script" uid="uid://bxcrc5h7konse" path="res://custom_resources/character_stats.gd" id="1_uv57p"]
+[ext_resource type="Resource" uid="uid://cxt6b2qdkvbj6" path="res://characters/warrior/warrior_draftable_cards.tres" id="2_v1f2f"]
+[ext_resource type="Resource" uid="uid://ti13mxiqdm6r" path="res://characters/warrior/warrior_starting_deck.tres" id="3_w3na2"]
+
+[resource]
+script = ExtResource("1_uv57p")
+character_name = "Wizard"
+description = "Years of wisdom."
+portrait = ExtResource("1_nvukq")
+starting_deck = ExtResource("3_w3na2")
+draftable_cards = ExtResource("2_v1f2f")
+cards_per_turn = 3
+max_mana = 4
+max_health = 38
+art = ExtResource("1_nvukq")

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dcimfgj0hp7h7"]
+
+[ext_resource type="Script" uid="uid://5cy3ttqmamas" path="res://characters/warrior/cards/warrior_boomerang.gd" id="1_c1v1p"]
+[ext_resource type="Texture2D" uid="uid://bmsghf6tb37rj" path="res://art/cards/shuriken.png" id="1_cd3dk"]
+[ext_resource type="AudioStream" uid="uid://dec2vqjq8kile" path="res://art/card_sounds/shuriken.mp3" id="3_0u2ll"]
+
+[resource]
+script = ExtResource("1_c1v1p")
+id = "warrior_boomerang"
+type = null
+target = 2
+cost = 1
+rarity = 1
+colour = null
+power = null
+exhausts = null
+icon = ExtResource("1_cd3dk")
+tooltip_text = "[center]对随机敌人造成 [color=\"ff0000\"]%s[/color] 伤害 %s 次.[/center]"
+sound = ExtResource("3_0u2ll")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b654jh3clbsyw"]
+
+[ext_resource type="Script" uid="uid://bldx62nlgact8" path="res://relics/mana_potion.gd" id="1_elp6x"]
+[ext_resource type="Texture2D" uid="uid://c2xhttrclo1r7" path="res://art/tile_0116.png" id="1_gxs4i"]
+
+[resource]
+script = ExtResource("1_elp6x")
+relic_name = "Mana_potion"
+id = "mana_potion"
+type = 1
+icon = ExtResource("1_gxs4i")
+tooltip = "[color=\\\"ffdf00\\\"]充能魔力瓶[/color]
+战斗开始时，获得 1 魔力。"

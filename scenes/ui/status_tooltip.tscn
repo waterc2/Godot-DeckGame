@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://by2ie01fomvoj"]
+
+[ext_resource type="Script" uid="uid://dlg4m7fts7hi2" path="res://scenes/ui/status_tooltip.gd" id="1_5y6wl"]
+[ext_resource type="Texture2D" uid="uid://cnkj02fd1ul87" path="res://art/icons/vulnerable.png" id="1_phat2"]
+[ext_resource type="Resource" uid="uid://g7hfbc46jaom" path="res://statuses/true_strength_form.tres" id="2_tv12x"]
+
+[node name="StatusTooltip" type="HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 300.0
+offset_bottom = 39.0
+script = ExtResource("1_5y6wl")
+status = ExtResource("2_tv12x")
+
+[node name="Icon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("1_phat2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Take 40%  more damage from each attacks, for %s turns"
+vertical_alignment = 1
+autowrap_mode = 2

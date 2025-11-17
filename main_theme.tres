@@ -1,0 +1,35 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://p0lsqu1jiqqh"]
+
+[ext_resource type="StyleBox" uid="uid://gmheoklpts0s" path="res://scenes/card_ui/card_hover_stylebox.tres" id="1_8k10f"]
+[ext_resource type="StyleBox" uid="uid://bxi0781rx1347" path="res://scenes/card_ui/card_base_stylebox.tres" id="1_darq8"]
+[ext_resource type="StyleBox" uid="uid://drs6q1b6567gb" path="res://scenes/card_ui/tooltip_stylebox.tres" id="2_snvpn"]
+[ext_resource type="FontFile" uid="uid://c5h1i6tnhqq6v" path="res://art/fusion-pixel-12px-proportional-zh_hans.ttf" id="3_axajx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lq0va"]
+bg_color = Color(0.729412, 0.552941, 0.509804, 0.231373)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.422371, 0.422371, 0.422371, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rfxd8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iupb8"]
+bg_color = Color(0.729485, 0.551816, 0.511297, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.154876, 0.154876, 0.154876, 1)
+
+[resource]
+default_font = ExtResource("3_axajx")
+default_font_size = 12
+Button/styles/disabled = SubResource("StyleBoxFlat_lq0va")
+Button/styles/focus = SubResource("StyleBoxEmpty_rfxd8")
+Button/styles/hover = ExtResource("1_8k10f")
+Button/styles/normal = ExtResource("1_darq8")
+Button/styles/pressed = SubResource("StyleBoxFlat_iupb8")
+Panel/styles/panel = ExtResource("1_darq8")
+PanelContainer/styles/panel = ExtResource("2_snvpn")

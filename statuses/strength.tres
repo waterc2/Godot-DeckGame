@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StrengthStatus" load_steps=3 format=3 uid="uid://b5hicpkwlv764"]
+
+[ext_resource type="Texture2D" uid="uid://b2encov5tj60t" path="res://art/icons/strength.png" id="1_ripvw"]
+[ext_resource type="Script" uid="uid://lufk6g10ipqs" path="res://statuses/strength.gd" id="2_23fo3"]
+
+[resource]
+script = ExtResource("2_23fo3")
+id = "strength"
+type = 2
+stack_type = 1
+can_expire = false
+duration = 0
+stacks = 2
+icon = ExtResource("1_ripvw")
+tooltip = "强壮：每次攻击增加%s伤害。"

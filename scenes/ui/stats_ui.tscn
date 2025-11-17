@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdji7dgmildip"]
+
+[ext_resource type="Theme" uid="uid://p0lsqu1jiqqh" path="res://main_theme.tres" id="1_f5wh4"]
+[ext_resource type="Script" uid="uid://fi0auj3xsubo" path="res://scenes/ui/stats_ui.gd" id="2_ajcnd"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="2_c7kvn"]
+[ext_resource type="PackedScene" uid="uid://i8k8xuvct8v3" path="res://scenes/ui/health_ui.tscn" id="4_hh0jp"]
+
+[node name="StatsUI" type="HBoxContainer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -45.0
+offset_right = 45.0
+offset_bottom = 16.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+theme = ExtResource("1_f5wh4")
+script = ExtResource("2_ajcnd")
+
+[node name="Block" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BlockImage" type="TextureRect" parent="Block"]
+layout_mode = 2
+texture = ExtResource("2_c7kvn")
+stretch_mode = 5
+
+[node name="BlockLabel" type="Label" parent="Block"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 12
+text = "10
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Health" parent="." instance=ExtResource("4_hh0jp")]
+layout_mode = 2

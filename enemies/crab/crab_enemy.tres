@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=4 format=3 uid="uid://b08m3htxjqbm4"]
+
+[ext_resource type="Script" uid="uid://bomm12wei7m0f" path="res://custom_resources/enemy_stats.gd" id="1_3ylov"]
+[ext_resource type="PackedScene" uid="uid://cmurb8o34xuw3" path="res://enemies/crab/crab_enemy_ai.tscn" id="1_t85t7"]
+[ext_resource type="Texture2D" uid="uid://bvoxw0masrga5" path="res://art/art-AI/crab.png" id="2_bipx8"]
+
+[resource]
+script = ExtResource("1_3ylov")
+ai = ExtResource("1_t85t7")
+max_health = 25
+art = ExtResource("2_bipx8")

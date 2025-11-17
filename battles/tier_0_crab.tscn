@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://co1aggqeq3tlv"]
+
+[ext_resource type="PackedScene" uid="uid://cwltsnjychan8" path="res://scenes/enemy/enemy.tscn" id="1_g23s7"]
+[ext_resource type="Resource" uid="uid://b08m3htxjqbm4" path="res://enemies/crab/crab_enemy.tres" id="2_8kf1s"]
+
+[node name="Tier0Crab" type="Node2D"]
+
+[node name="Enemy" parent="." instance=ExtResource("1_g23s7")]
+position = Vector2(410, 120)
+stats = ExtResource("2_8kf1s")

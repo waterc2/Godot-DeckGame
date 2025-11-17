@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bc81xm0s3ftqt"]
+
+[ext_resource type="Texture2D" uid="uid://boklhiqs1414d" path="res://art/tile_0115.png" id="1_djbis"]
+[ext_resource type="Script" uid="uid://1awetsdtqx03" path="res://relics/healing_potion.gd" id="1_je4sh"]
+
+[resource]
+script = ExtResource("1_je4sh")
+heal_amount = 6
+relic_name = "Healing_potion"
+id = "healing_potion"
+type = 3
+icon = ExtResource("1_djbis")
+tooltip = "[color=\\\"ffdf00\\\"]无尽治疗瓶[/color]
+在战斗结束时，恢复 6 点生命。"

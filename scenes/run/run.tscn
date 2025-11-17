@@ -1,0 +1,174 @@
+[gd_scene load_steps=13 format=3 uid="uid://dp2shpcie8qa1"]
+
+[ext_resource type="Script" uid="uid://bf5wphq6bon41" path="res://scenes/run/run.gd" id="1_ilhvo"]
+[ext_resource type="PackedScene" uid="uid://deab3pwvb1akd" path="res://scenes/map/map.tscn" id="1_x4kvn"]
+[ext_resource type="Resource" uid="uid://d1h1wt7q0kmk8" path="res://scenes/run/run_startup.tres" id="2_8ws2e"]
+[ext_resource type="PackedScene" uid="uid://bh8g4b1ut6bv4" path="res://scenes/ui/card_pile_opener.tscn" id="4_1pq13"]
+[ext_resource type="PackedScene" uid="uid://i8k8xuvct8v3" path="res://scenes/ui/health_ui.tscn" id="4_bspvd"]
+[ext_resource type="PackedScene" uid="uid://dcnid30oogjfb" path="res://scenes/ui/gold_ui.tscn" id="4_cmpf8"]
+[ext_resource type="Texture2D" uid="uid://018jo6lvskcy" path="res://art/deck.png" id="5_ttiay"]
+[ext_resource type="PackedScene" uid="uid://dynypd1i627u3" path="res://scenes/ui/card_pile_view.tscn" id="6_6flo7"]
+[ext_resource type="PackedScene" uid="uid://owrc6qpw1hnw" path="res://scenes/relic_handler/relic_handler.tscn" id="6_uuqv3"]
+[ext_resource type="PackedScene" uid="uid://dlyt3hca81flf" path="res://scenes/relic_handler/relic_tooltip.tscn" id="10_yargr"]
+[ext_resource type="Script" uid="uid://dkkvoqcvtua52" path="res://scenes/run/pause_menu.gd" id="11_g42ja"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yeia0"]
+font_size = 32
+
+[node name="Run" type="Node"]
+script = ExtResource("1_ilhvo")
+run_startup = ExtResource("2_8ws2e")
+
+[node name="Map" parent="." instance=ExtResource("1_x4kvn")]
+position = Vector2(0, 1)
+
+[node name="CurrentView" type="Node" parent="."]
+
+[node name="DebugButtons" type="VBoxContainer" parent="."]
+visible = false
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+alignment = 1
+
+[node name="MapButton" type="Button" parent="DebugButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Map"
+
+[node name="BattleButton" type="Button" parent="DebugButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Battle"
+
+[node name="ShopButton" type="Button" parent="DebugButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Shop"
+
+[node name="TreasureButton" type="Button" parent="DebugButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Treasure"
+
+[node name="RewardsButton" type="Button" parent="DebugButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reward"
+
+[node name="CampfireButton" type="Button" parent="DebugButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Campfire"
+
+[node name="TopBar" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="Background" type="ColorRect" parent="TopBar"]
+custom_minimum_size = Vector2(0, 30)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 0.482353)
+
+[node name="BarIteams" type="HBoxContainer" parent="TopBar"]
+custom_minimum_size = Vector2(0, 30)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="HealthUI" parent="TopBar/BarIteams" instance=ExtResource("4_bspvd")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+show_max_hp = true
+
+[node name="GoldUI" parent="TopBar/BarIteams" instance=ExtResource("4_cmpf8")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 0)
+layout_mode = 2
+
+[node name="RelicHandlerContainer" type="CenterContainer" parent="TopBar/BarIteams"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RelicHandler" parent="TopBar/BarIteams/RelicHandlerContainer" instance=ExtResource("6_uuqv3")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="DeckButton" parent="TopBar/BarIteams" node_paths=PackedStringArray("counter") instance=ExtResource("4_1pq13")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture_normal = ExtResource("5_ttiay")
+counter = NodePath("Counter")
+
+[node name="Counter" type="Label" parent="TopBar/BarIteams/DeckButton"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 15.0
+offset_right = 8.0
+offset_bottom = 33.0
+text = "77
+"
+horizontal_alignment = 1
+
+[node name="DeckView" parent="TopBar" instance=ExtResource("6_6flo7")]
+unique_name_in_owner = true
+visible = false
+
+[node name="RelicTooltip" parent="TopBar" instance=ExtResource("10_yargr")]
+unique_name_in_owner = true
+visible = false
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+process_mode = 3
+layer = 50
+visible = false
+script = ExtResource("11_g42ja")
+
+[node name="ColorRect" type="ColorRect" parent="PauseMenu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.239216, 0.239216, 0.239216, 0.854902)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = -40.5
+offset_right = 82.0
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="PauseMenu/VBoxContainer"]
+layout_mode = 2
+text = "Paused"
+label_settings = SubResource("LabelSettings_yeia0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BackToGameButton" type="Button" parent="PauseMenu/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(80, 28)
+layout_mode = 2
+text = "Back"
+
+[node name="SaveAndQuitButton" type="Button" parent="PauseMenu/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(80, 28)
+layout_mode = 2
+text = "Main Menu"

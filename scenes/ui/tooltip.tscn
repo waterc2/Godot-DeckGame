@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp7wfl00wy6og"]
+
+[ext_resource type="Theme" uid="uid://p0lsqu1jiqqh" path="res://main_theme.tres" id="1_2d5qg"]
+[ext_resource type="Script" uid="uid://p3udcetqu558" path="res://scenes/ui/tooltip.gd" id="2_6aumw"]
+[ext_resource type="Texture2D" uid="uid://cqcal03735mv8" path="res://art/tile_0118.png" id="2_widm1"]
+
+[node name="Tooltip" type="PanelContainer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_right = 150.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme = ExtResource("1_2d5qg")
+script = ExtResource("2_6aumw")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="TooltipIcon" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("2_widm1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TooltipText" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/line_separation = 2
+bbcode_enabled = true
+text = "Tooltip decription 测试中文
+测试第二行内容
+测试第3行内容31231232312312312321312312421432r343243"

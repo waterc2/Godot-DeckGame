@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://ba01r11quvkfc"]
+
+[ext_resource type="Texture2D" uid="uid://bxa8pkakcodgw" path="res://art/tile_0082.png" id="1_3x3vn"]
+[ext_resource type="Script" uid="uid://de0difgfiuxm2" path="res://relics/explosive_barrel.gd" id="2_yalg6"]
+
+[resource]
+script = ExtResource("2_yalg6")
+damage = 2
+relic_name = "Explosive_barrel"
+id = "explosive_barrel"
+type = 0
+icon = ExtResource("1_3x3vn")
+tooltip = "[color=\\\"ffdf00\\\"]爆破筒[/color]
+在回合开始时，对所有敌人造成 2 点伤害."

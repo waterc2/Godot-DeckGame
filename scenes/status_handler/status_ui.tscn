@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://mrdh8m1xtuiy"]
+
+[ext_resource type="Texture2D" uid="uid://b2encov5tj60t" path="res://art/icons/strength.png" id="1_3vul5"]
+[ext_resource type="Script" uid="uid://b85npy5gxhas0" path="res://scenes/status_handler/status_ui.gd" id="1_vk44j"]
+
+[node name="StatusUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_vk44j")
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
+texture = ExtResource("1_3vul5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Duration" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 22.0
+theme_override_constants/outline_size = 4
+text = "999"
+
+[node name="Stacks" type="Label" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 25.0
+offset_bottom = 25.0
+theme_override_constants/outline_size = 4
+text = "888"
+horizontal_alignment = 1

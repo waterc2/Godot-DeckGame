@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://crhkvc4tqvcq4"]
+
+[ext_resource type="PackedScene" uid="uid://cwltsnjychan8" path="res://scenes/enemy/enemy.tscn" id="1_u18o4"]
+[ext_resource type="Resource" uid="uid://b2i8gwtyjx2gy" path="res://enemies/toxic_ghost/toxic_ghost.tres" id="2_ipcr1"]
+
+[node name="Tier2ToxicGhost" type="Node2D"]
+
+[node name="Enemy" parent="." instance=ExtResource("1_u18o4")]
+position = Vector2(407, 134)
+stats = ExtResource("2_ipcr1")

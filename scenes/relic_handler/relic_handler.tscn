@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://owrc6qpw1hnw"]
+
+[ext_resource type="Texture2D" uid="uid://pwxy7eljitfo" path="res://art/arrow_small.png" id="1_fw1bm"]
+[ext_resource type="Script" uid="uid://bivxb5d7uu005" path="res://scenes/relic_handler/relic_handler.gd" id="1_rwa0c"]
+[ext_resource type="Texture2D" uid="uid://ct1fnceoaw64o" path="res://art/arrow_small_disabled.png" id="2_yn8g1"]
+[ext_resource type="Script" uid="uid://vgmc8xt4komy" path="res://scenes/relic_handler/relics_control.gd" id="3_o7mwa"]
+
+[node name="RelicHandler" type="HBoxContainer"]
+offset_right = 240.0
+offset_bottom = 32.0
+script = ExtResource("1_rwa0c")
+
+[node name="LeftButton" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+texture_normal = ExtResource("1_fw1bm")
+texture_pressed = ExtResource("1_fw1bm")
+texture_hover = ExtResource("1_fw1bm")
+texture_disabled = ExtResource("2_yn8g1")
+stretch_mode = 5
+flip_h = true
+
+[node name="RelicsControl" type="Control" parent="." node_paths=PackedStringArray("left_button", "right_button")]
+clip_contents = true
+custom_minimum_size = Vector2(176, 0)
+layout_mode = 2
+script = ExtResource("3_o7mwa")
+left_button = NodePath("../LeftButton")
+right_button = NodePath("../RightButton")
+
+[node name="Relics" type="HBoxContainer" parent="RelicsControl"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(176, 32)
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 32.0
+theme_override_constants/separation = 4
+
+[node name="RightButton" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+texture_normal = ExtResource("1_fw1bm")
+texture_pressed = ExtResource("1_fw1bm")
+texture_hover = ExtResource("1_fw1bm")
+texture_disabled = ExtResource("2_yn8g1")
+stretch_mode = 5

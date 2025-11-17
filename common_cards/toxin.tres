@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dafc2be1sibfq"]
+
+[ext_resource type="Texture2D" uid="uid://psr6xk3k26oh" path="res://art/tile_0114.png" id="1_00gs1"]
+[ext_resource type="Script" uid="uid://bu47klur8rqio" path="res://common_cards/toxin.gd" id="1_afwg3"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://art/enemy_attack.ogg" id="3_1w8ly"]
+
+[resource]
+script = ExtResource("1_afwg3")
+id = "toxic"
+type = 1
+target = 0
+cost = 1
+rarity = 0
+colour = 4
+power = 0
+exhausts = true
+icon = ExtResource("1_00gs1")
+tooltip_text = "[center]对自己造成 %d 伤害[/center]"
+sound = ExtResource("3_1w8ly")
+metadata/_custom_type_script = "uid://cfbooepxy64uy"

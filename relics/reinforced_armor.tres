@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://clbtrqqst6drv"]
+
+[ext_resource type="Texture2D" uid="uid://dytq0eumwvky6" path="res://art/tile_0074.png" id="1_gefvn"]
+[ext_resource type="Script" uid="uid://divjcx4xgjwo1" path="res://relics/reinforced_armor.gd" id="2_v3jew"]
+
+[resource]
+script = ExtResource("2_v3jew")
+block_bonus = 3
+relic_name = "Reinforced_armor"
+id = "reinforced_armor"
+type = 2
+icon = ExtResource("1_gefvn")
+tooltip = "[color=\\\"ffdf00\\\"]强化护甲[/color]
+在你回合结束时，获得 3 护甲。"

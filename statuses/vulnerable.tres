@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VulnerableStatus" load_steps=3 format=3 uid="uid://b3dyuy2kg07a6"]
+
+[ext_resource type="Texture2D" uid="uid://cnkj02fd1ul87" path="res://art/icons/vulnerable.png" id="1_706bb"]
+[ext_resource type="Script" uid="uid://sqqgey0vpt6n" path="res://statuses/vulnerable.gd" id="2_mrxo5"]
+
+[resource]
+script = ExtResource("2_mrxo5")
+id = "vulnerable"
+type = 0
+stack_type = 2
+can_expire = true
+duration = 1
+stacks = 0
+icon = ExtResource("1_706bb")
+tooltip = "破甲：收到的伤害增加40%%，持续%s回合。"

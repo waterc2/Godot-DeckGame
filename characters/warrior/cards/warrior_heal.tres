@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://hwjoye2urt2m"]
+
+[ext_resource type="Script" uid="uid://d15i2ic0tg4b" path="res://characters/warrior/cards/warrior_heal.gd" id="1_f47rk"]
+[ext_resource type="Texture2D" uid="uid://d0edy7thj8ce6" path="res://art/heart.png" id="1_wu7m0"]
+[ext_resource type="AudioStream" uid="uid://my0lmer8an1a" path="res://art/sound_heal.mp3" id="3_spwmr"]
+
+[resource]
+script = ExtResource("1_f47rk")
+id = ""
+type = 1
+target = 0
+cost = 2
+rarity = 2
+colour = 0
+power = 0
+exhausts = true
+icon = ExtResource("1_wu7m0")
+tooltip_text = "[center]恢复 [color=\"db396f\"]%s[/color] 生命.[/center] 损坏"
+sound = ExtResource("3_spwmr")

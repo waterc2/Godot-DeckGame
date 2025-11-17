@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3 uid="uid://cigwnnl6wkdka"]
+
+[ext_resource type="Script" uid="uid://cblyuqxwm5rx4" path="res://scenes/ui/card_rewards.gd" id="1_atoeu"]
+[ext_resource type="PackedScene" uid="uid://buc8gm6n5ewid" path="res://scenes/ui/card_menu_ui.tscn" id="1_jdku3"]
+[ext_resource type="PackedScene" uid="uid://c8pvaqkihum6b" path="res://scenes/ui/card_tooltip_popup.tscn" id="2_3g275"]
+
+[node name="CardRewards" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.807843)
+script = ExtResource("1_atoeu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -79.0
+offset_top = -34.0
+offset_right = 79.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Cards" type="HBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="CardMenuUI" parent="VBoxContainer/Cards" instance=ExtResource("1_jdku3")]
+layout_mode = 2
+
+[node name="CardMenuUI2" parent="VBoxContainer/Cards" instance=ExtResource("1_jdku3")]
+layout_mode = 2
+
+[node name="CardMenuUI3" parent="VBoxContainer/Cards" instance=ExtResource("1_jdku3")]
+layout_mode = 2
+
+[node name="SkipCardReward" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 28)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Skip"
+
+[node name="CardTooltipPopup" parent="." instance=ExtResource("2_3g275")]
+visible = false
+layout_mode = 1
+background_color = Color(0.247919, 0.101666, 0.0469614, 0.898039)
+
+[node name="TakeButton" type="Button" parent="CardTooltipPopup"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -61.0
+offset_right = 50.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Take"

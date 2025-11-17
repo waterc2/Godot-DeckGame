@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3 uid="uid://cwltsnjychan8"]
+
+[ext_resource type="Script" uid="uid://ciqh17yqv3oax" path="res://scenes/enemy/enemy.gd" id="1_7mo5q"]
+[ext_resource type="Texture2D" uid="uid://bvoxw0masrga5" path="res://art/art-AI/crab.png" id="2_5ij5a"]
+[ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="2_wt4pu"]
+[ext_resource type="PackedScene" uid="uid://cdji7dgmildip" path="res://scenes/ui/stats_ui.tscn" id="3_kx7lw"]
+[ext_resource type="PackedScene" uid="uid://disjjd411uo7t" path="res://scenes/ui/intent_ui.tscn" id="5_o72fv"]
+[ext_resource type="PackedScene" uid="uid://qyct6fosal1a" path="res://scenes/status_handler/status_handler.tscn" id="6_qbo6k"]
+[ext_resource type="PackedScene" uid="uid://nntuv2w58ahj" path="res://scenes/modifier_handler/modifier_handler.tscn" id="7_qajq3"]
+[ext_resource type="PackedScene" uid="uid://din5hmfw78prd" path="res://scenes/modifier_handler/modifier.tscn" id="8_i2ojx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mk0rf"]
+size = Vector2(38, 36.5)
+
+[node name="Enemy" type="Area2D" groups=["enemies"]]
+collision_layer = 4
+script = ExtResource("1_7mo5q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5ij5a")
+
+[node name="Arrow" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(16, 0)
+rotation = -1.5708
+texture = ExtResource("2_wt4pu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mk0rf")
+
+[node name="StatsUI" parent="." instance=ExtResource("3_kx7lw")]
+offset_left = -47.0
+offset_top = 16.0
+offset_right = 43.0
+offset_bottom = 34.0
+scale = Vector2(1, 1)
+alignment = 1
+
+[node name="IntentUI" parent="." instance=ExtResource("5_o72fv")]
+offset_left = -14.0
+offset_top = -40.0
+offset_right = 12.0
+offset_bottom = -14.0
+
+[node name="StatusHandler" parent="." node_paths=PackedStringArray("status_owner") instance=ExtResource("6_qbo6k")]
+offset_left = -42.0
+offset_top = 36.0
+offset_right = -42.0
+offset_bottom = 36.0
+status_owner = NodePath("..")
+
+[node name="ModifierHandler" parent="." instance=ExtResource("7_qajq3")]
+
+[node name="DamageDealtModifier" parent="ModifierHandler" instance=ExtResource("8_i2ojx")]
+
+[node name="DamageTakenModifier" parent="ModifierHandler" instance=ExtResource("8_i2ojx")]
+type = 1
+
+[node name="BlockModifier" parent="ModifierHandler" instance=ExtResource("8_i2ojx")]
+type = 2
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
