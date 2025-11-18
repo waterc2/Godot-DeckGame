@@ -11,6 +11,15 @@ func deactivate_relic(_owner: RelicUI) -> void:
 	Events.shop_entered.disconnect(add_shop_modifier)
 
 
+func get_tooltip() -> String:
+	var translated_text = tr(tooltip)
+	# Convert discount (-0.25) to percentage string (25%)
+	var percentage_value = abs(discount) * 100
+	var percentage_string = "%d%%" % percentage_value
+	# Format with percentage value
+	return translated_text % [percentage_string]
+
+
 func add_shop_modifier(shop: Shop, owner: RelicUI = null) -> void:
 	if owner:
 		owner.flash()

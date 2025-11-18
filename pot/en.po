@@ -102,11 +102,7 @@ msgstr "Rest"
 
 #: scenes/campfire/campfire.tscn
 msgid "+ 30% HP"
-msgstr "+ 30% HP"
-
-#: scenes/relic_handler/relic_tooltip.tscn
-msgid "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
-msgstr "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
+msgstr "+ %s HP"
 
 #: scenes/shop/shop.tscn
 msgid "Leave"
@@ -141,10 +137,6 @@ msgstr "Take"
 msgid "[center]Heal for [color=\"db396f\"]10[/color] HP.[/center]"
 msgstr "[center]Heal for [color=\"db396f\"]10[/color] HP.[/center]"
 
-#: scenes/ui/card_visuals.tscn
-#: scenes/ui/gold_ui.gd
-msgid "0"
-msgstr "0"
 #: scenes/ui/character_selector.tscn
 msgid "Warrior"
 msgstr "Warrior"
@@ -156,14 +148,6 @@ msgstr "Likes to slice things up."
 #: scenes/ui/character_selector.tscn
 msgid "Start\n"
 msgstr "Start\n"
-
-#: scenes/ui/health_ui.tscn
-msgid "66"
-msgstr "66"
-
-#: scenes/ui/health_ui.tscn
-msgid "/66"
-msgstr "/66"
 
 #: scenes/ui/main_menu.tscn
 msgid "My First\nNot Roguelike Deckbuild Game"
@@ -177,17 +161,9 @@ msgstr "New Run"
 msgid "Exit"
 msgstr "Exit"
 
-#: scenes/ui/mana_ui.tscn
-msgid "3/3"
-msgstr "3/3"
-
 #: scenes/ui/reward_button.tscn
 msgid "99 Gold"
 msgstr "99 Gold"
-
-#: scenes/ui/tooltip.tscn
-msgid "Tooltip description Chinese test\nTest second line content\nTest third line content 31231232312312312321312312421432r343243"
-msgstr "Tooltip description Chinese test\nTest second line content\nTest third line content 31231232312312312321312312421432r343243"
 
 #: scenes/win_screen/win_screen.tscn
 msgid "You are victorious!"
@@ -211,7 +187,7 @@ msgstr "Coupons"
 
 #: relics/coupons.tres
 msgid "RELIC_COUPONS_TOOLTIP"
-msgstr "[color=\"ffdf00\"]Coupons[/color]\n75% discount on all items in the shop"
+msgstr "[color=\"ffdf00\"]Coupons[/color]\n%s discount on all items in the shop"
 
 #: statuses/strength.tres
 msgid "STATUS_STRENGTH_TOOLTIP"
@@ -230,7 +206,7 @@ msgstr "Explosive Barrel"
 
 #: relics/explosive_barrel.tres
 msgid "RELIC_EXPLOSIVE_BARREL_TOOLTIP"
-msgstr "[color=\"ffdf00\"]Explosive Barrel[/color]\nAt the start of your turn, deal 2 damage to all enemies."
+msgstr "[color=\"ffdf00\"]Explosive Barrel[/color]\nAt the start of your turn, deal %s damage to all enemies."
 
 #: relics/healing_potion.tres
 msgid "RELIC_HEALING_POTION_NAME"
@@ -238,7 +214,7 @@ msgstr "Healing Potion"
 
 #: relics/healing_potion.tres
 msgid "RELIC_HEALING_POTION_TOOLTIP"
-msgstr "[color=\"ffdf00\"]Endless Healing Flask[/color]\nAt the end of combat, restore 6 HP."
+msgstr "[color=\"ffdf00\"]Endless Healing Flask[/color]\nAt the end of combat, restore %s HP."
 
 msgid "warrior_big_slam_tooltip_text"
 msgstr "[center]Deals [color=\"ff0000\"]%s[/color] damage, applies %s [color=\"ffdf00\"]Vulnerable[/color].[/center]"
@@ -271,19 +247,19 @@ msgid "wizard_description"
 msgstr "Years of wisdom."
 
 msgid "mana_potion_tooltip"
-msgstr "[color=\"ffdf00\"]Charged Mana Bottle[/color]\nAt the start of combat, gain 1 Mana."
+msgstr "[color=\"ffdf00\"]Charged Mana Bottle[/color]\nAt the start of combat, gain %s Mana."
 
 msgid "reinforced_armor_relic_name"
 msgstr "Reinforced_armor"
 
 msgid "reinforced_armor_tooltip"
-msgstr "[color=\"ffdf00\"]Reinforced Armor[/color]\nAt the end of your turn, gain 3 Block."
+msgstr "[color=\"ffdf00\"]Reinforced Armor[/color]\nAt the end of your turn, gain %s Block."
 
 msgid "true_strength_form_tooltip"
 msgstr "True Strength: Gain %s Strength each turn."
 
 msgid "vulnerable_tooltip"
-msgstr "Vulnerable: Take 40% more damage, lasts for %s turns."
+msgstr "Vulnerable: Take %s more damage, lasts for %s turns."
 
 msgid "weak_tooltip"
-msgstr "Weak: Deal 25%% less damage, lasts for %s turns."
+msgstr "Weak: Deal %s less damage, lasts for %s turns."

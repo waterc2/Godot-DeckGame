@@ -24,3 +24,12 @@ func initialize_status(target: Node) -> void:
 func _on_status_changed(dmg_taken_modifier: Modifier) -> void:
 	if duration <= 0 and dmg_taken_modifier:
 		dmg_taken_modifier.remove_value("vulnerable")
+
+
+func get_tooltip() -> String:
+	var translated_text = tr(tooltip)
+	# Convert MODIFIER (0.4) to percentage string (40%)
+	var percentage_value = MODIFIER * 100
+	var percentage_string = "%d%%" % percentage_value
+	# Format with percentage first, then duration
+	return translated_text % [percentage_string, duration]

@@ -102,7 +102,7 @@ msgstr "休息"
 
 #: scenes/campfire/campfire.tscn
 msgid "+ 30% HP"
-msgstr "+ 30% 生命值"
+msgstr "+ %s 生命值"
 
 #: scenes/relic_handler/relic_tooltip.tscn
 msgid "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
@@ -211,7 +211,7 @@ msgstr "优惠券"
 
 #: relics/coupons.tres
 msgid "RELIC_COUPONS_TOOLTIP"
-msgstr "[color=\"ffdf00\"]优惠券[/color]\n商店全部道具75折"
+msgstr "[color=\"ffdf00\"]优惠券[/color]\n商店全部道具%s折扣"
 
 #: statuses/strength.tres
 msgid "STATUS_STRENGTH_TOOLTIP"
@@ -231,7 +231,7 @@ msgstr "爆破筒"
 
 #: relics/explosive_barrel.tres
 msgid "RELIC_EXPLOSIVE_BARREL_TOOLTIP"
-msgstr "[color=\"ffdf00\"]爆破筒[/color]\n在回合开始时，对所有敌人造成 2 点伤害."
+msgstr "[color=\"ffdf00\"]爆破筒[/color]\n在回合开始时，对所有敌人造成 %s 点伤害."
 
 #: relics/healing_potion.tres
 msgid "RELIC_HEALING_POTION_NAME"
@@ -239,7 +239,7 @@ msgstr "无尽治疗瓶"
 
 #: relics/healing_potion.tres
 msgid "RELIC_HEALING_POTION_TOOLTIP"
-msgstr "[color=\"ffdf00\"]无尽治疗瓶[/color]\n在战斗结束时，恢复 6 点生命。"
+msgstr "[color=\"ffdf00\"]无尽治疗瓶[/color]\n在战斗结束时，恢复 %s 点生命。"
 
 msgid "warrior_big_slam_tooltip_text"
 msgstr "[center]造成 [color=\"ff0000\"]%s[/color] 伤害, %s [color=\"ffdf00\"]重伤[/color].[/center]"
@@ -272,19 +272,19 @@ msgid "wizard_description"
 msgstr "Years of wisdom."
 
 msgid "mana_potion_tooltip"
-msgstr "[color=\"ffdf00\"]充能魔力瓶[/color]\n战斗开始时，获得 1 魔力。"
+msgstr "[color=\"ffdf00\"]充能魔力瓶[/color]\n战斗开始时，获得 %s 魔力。"
 
 msgid "reinforced_armor_relic_name"
 msgstr "Reinforced_armor"
 
 msgid "reinforced_armor_tooltip"
-msgstr "[color=\"ffdf00\"]强化护甲[/color]\n在你回合结束时，获得 3 护甲。"
+msgstr "[color=\"ffdf00\"]强化护甲[/color]\n在你回合结束时，获得 %s 护甲。"
 
 msgid "true_strength_form_tooltip"
 msgstr "真实之力：每回合增加%s强壮。"
 
 msgid "vulnerable_tooltip"
-msgstr "破甲：收到的伤害增加40%，持续%s回合。"
+msgstr "破甲：收到的伤害增加%s，持续%s回合。"
 
 msgid "weak_tooltip"
-msgstr "虚弱：造成的伤害减少25%%，持续%s回合。"
+msgstr "虚弱：造成的伤害减少%s，持续%s回合。"

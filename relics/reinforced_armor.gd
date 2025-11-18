@@ -10,3 +10,9 @@ func activate_relic(owner: RelicUI) -> void:
 	block_effect.sound = load("res://art/block.ogg")
 	block_effect.execute(player)
 	owner.flash()
+
+
+func get_tooltip() -> String:
+	var translated_text = tr(tooltip)
+	# Format with block_bonus value
+	return translated_text % [block_bonus]

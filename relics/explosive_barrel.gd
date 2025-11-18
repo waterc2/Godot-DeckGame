@@ -16,4 +16,6 @@ func activate_relic(owner: RelicUI) -> void:
 
 # we can provide unique tooltips per relic if we want to
 func get_tooltip() -> String:
-	return tooltip
+	var translated_text = tr(tooltip)
+	# Format with damage value
+	return translated_text % [damage]
