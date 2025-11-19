@@ -162,8 +162,9 @@ layout_mode = 2
 alignment = 1
 
 [node name="BGMLabel" type="Label" parent="PauseMenu/VBoxContainer/BGMMuteContainer"]
+unique_name_in_owner = true
 layout_mode = 2
-text = "Mute BGM"
+text = "UI_MUTE_BGM"
 
 [node name="BGMMuteCheckbox" type="CheckBox" parent="PauseMenu/VBoxContainer/BGMMuteContainer"]
 unique_name_in_owner = true
@@ -174,8 +175,9 @@ layout_mode = 2
 alignment = 1
 
 [node name="SFXLabel" type="Label" parent="PauseMenu/VBoxContainer/SFXMuteContainer"]
+unique_name_in_owner = true
 layout_mode = 2
-text = "Mute SFX"
+text = "UI_MUTE_SFX"
 
 [node name="SFXMuteCheckbox" type="CheckBox" parent="PauseMenu/VBoxContainer/SFXMuteContainer"]
 unique_name_in_owner = true

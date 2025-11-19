@@ -15,8 +15,16 @@ msgstr ""
 msgid "Map"
 msgstr "Map"
 
+#: scenes/run/run.gd
+msgid "run.map"
+msgstr "Map"
+
 #: scenes/run/run.tscn
 msgid "Battle"
+msgstr "Battle"
+
+#: scenes/run/run.gd
+msgid "run.battle"
 msgstr "Battle"
 
 #: scenes/run/run.tscn
@@ -29,6 +37,10 @@ msgstr "Treasure"
 
 #: scenes/run/run.tscn
 msgid "Reward"
+msgstr "Reward"
+
+#: scenes/run/run.gd
+msgid "run.reward"
 msgstr "Reward"
 
 #: scenes/run/run.tscn
@@ -56,14 +68,27 @@ msgstr "[center]Deals [color=\"ff0000\"]%s[/color] damage to a random enemy %s t
 msgid "Shop"
 msgstr "Shop"
 
+#: scenes/run/run.gd
+#: scenes/shop/shop.gd
+msgid "common.shop"
+msgstr "Shop"
+
 #: scenes/run/run.tscn
 #: scenes/treasure/treasure.tscn
 msgid "Treasure"
 msgstr "Treasure"
 
+#: scenes/run/run.gd
+msgid "common.treasure"
+msgstr "Treasure"
+
 #: scenes/run/run.tscn
 #: scenes/campfire/campfire.tscn
 msgid "Campfire"
+msgstr "Campfire"
+
+#: scenes/run/run.gd
+msgid "common.campfire"
 msgstr "Campfire"
 
 #: scenes/run/run.tscn
@@ -80,20 +105,51 @@ msgid "Main Menu"
 msgstr "Main Menu"
 
 #: scenes/run/run.tscn
+#: scenes/ui/battle_over_panel.tscn
+#: scenes/win_screen/win_screen.tscn
+msgid "UI_MAIN_MENU_BUTTON"
+msgstr "Main Menu"
+
+#: scenes/ui/battle_over_panel.gd
+#: scenes/win_screen/win_screen.gd
+msgid "common.main_menu"
+msgstr "Main Menu"
+
+#: scenes/run/run.tscn
 msgid "Switch Language"
 msgstr "Switch Language"
+
+#: scenes/run/run.tscn
+msgid "UI_MUTE_BGM"
+msgstr "Mute BGM"
+
+#: scenes/run/run.tscn
+msgid "UI_MUTE_SFX"
+msgstr "Mute SFX"
 
 #: scenes/battle_reward/battle_reward.tscn
 msgid "Rewards"
 msgstr "Rewards"
 
-#: scenes/battle_reward/battle_reward.tscn
-msgid "123"
-msgstr "123"
+#: scenes/battle_reward/battle_reward.gd
+msgid "battle_reward.title"
+msgstr "Rewards"
+
+#: scenes/battle_reward/battle_reward.gd
+msgid "battle_reward.gold_text"
+msgstr "%s Gold"
+
+#: scenes/battle_reward/battle_reward.gd
+msgid "battle_reward.add_new_card"
+msgstr "Add New Card"
 
 #: scenes/battle_reward/battle_reward.tscn
 #: scenes/ui/main_menu.tscn
 msgid "Continue"
+msgstr "Continue"
+
+#: scenes/battle_reward/battle_reward.gd
+msgid "common.continue"
 msgstr "Continue"
 
 #: scenes/campfire/campfire.tscn
@@ -112,9 +168,18 @@ msgstr "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Re
 msgid "Leave"
 msgstr "Leave"
 
+#: scenes/shop/shop.gd
+msgid "shop.leave"
+msgstr "Leave"
+
 #: scenes/shop/shop_card.tscn
 #: scenes/shop/shop_relic.tscn
 msgid "Buy"
+msgstr "Buy"
+
+#: scenes/shop/shop_card.gd
+#: scenes/shop/shop_relic.gd
+msgid "shop.buy"
 msgstr "Buy"
 
 #: scenes/ui/battle_over_panel.tscn
@@ -122,19 +187,59 @@ msgid "Victorious!"
 msgstr "Victorious!"
 
 #: scenes/ui/battle_over_panel.tscn
+msgid "BATTLE_OVER_VICTORIOUS_LABEL"
+msgstr "Victorious!"
+
+#: scenes/ui/battle_over_panel.tscn
+msgid "BATTLE_OVER_AWESOME_LABEL"
+msgstr "Awesome!"
+
+#: scenes/ui/battle_over_panel.tscn
 msgid "Awesome!"
+msgstr "Awesome!"
+
+#: scenes/ui/battle_over_panel.gd
+msgid "battle_over.title_victory"
+msgstr "Victorious!"
+
+#: scenes/ui/battle_over_panel.gd
+msgid "battle_over.continue"
 msgstr "Awesome!"
 
 #: scenes/ui/card_pile_view.tscn
 msgid "Discard Pile"
 msgstr "Discard Pile"
 
+#: scenes/battle/battle.tscn
+msgid "UI_END_TURN"
+msgstr "End Turn"
+
+#: scenes/ui/battle_ui.gd
+msgid "UI_DRAW_PILE_TITLE"
+msgstr "Draw Pile"
+
+#: scenes/ui/battle_ui.gd
+msgid "UI_DISCARD_PILE_TITLE"
+msgstr "Discard Pile"
+
+#: scenes/run/run.gd
+msgid "UI_DECK_TITLE"
+msgstr "Deck"
+
 #: scenes/ui/card_rewards.tscn
 msgid "Skip"
 msgstr "Skip"
 
+#: scenes/ui/card_rewards.gd
+msgid "card_rewards.skip"
+msgstr "Skip"
+
 #: scenes/ui/card_rewards.tscn
 msgid "Take"
+msgstr "Take"
+
+#: scenes/ui/card_rewards.gd
+msgid "card_rewards.take"
 msgstr "Take"
 
 #: scenes/ui/card_tooltip_popup.tscn
@@ -143,8 +248,6 @@ msgstr "[center]Heal for [color=\"db396f\"]10[/color] HP.[/center]"
 
 #: scenes/ui/card_visuals.tscn
 #: scenes/ui/gold_ui.gd
-msgid "0"
-msgstr "0"
 #: scenes/ui/character_selector.tscn
 msgid "Warrior"
 msgstr "Warrior"
@@ -157,17 +260,19 @@ msgstr "Likes to slice things up."
 msgid "CHARACTER_SELECTOR_START_LABEL"
 msgstr "Start"
 
-#: scenes/ui/health_ui.tscn
-msgid "66"
-msgstr "66"
+#: scenes/ui/character_selector.gd
+msgid "character_selector.start"
+msgstr "Start"
 
 #: scenes/ui/health_ui.tscn
-msgid "/66"
-msgstr "/66"
 
 #: scenes/ui/main_menu.tscn
 msgid "My First\nNot Roguelike Deckbuild Game"
 msgstr "My First\nNot Roguelike Deckbuild Game"
+
+#: scenes/ui/main_menu.tscn
+msgid "MAIN_MENU_SUBTITLE_TEXT"
+msgstr "Main Menu"
 
 #: scenes/ui/main_menu.tscn
 msgid "NewRun"
@@ -178,8 +283,6 @@ msgid "Exit"
 msgstr "Exit"
 
 #: scenes/ui/mana_ui.tscn
-msgid "3/3"
-msgstr "3/3"
 
 #: scenes/ui/reward_button.tscn
 msgid "99 Gold"
@@ -191,6 +294,10 @@ msgstr "Tooltip description Chinese test\nTest second line content\nTest third l
 
 #: scenes/win_screen/win_screen.tscn
 msgid "You are victorious!"
+msgstr "You are victorious!"
+
+#: scenes/win_screen/win_screen.gd
+msgid "win_screen.title"
 msgstr "You are victorious!"
 
 #: common_cards/toxin.gd

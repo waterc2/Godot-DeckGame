@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dai442u6jo0y2" path="res://custom_resources/card_pile.gd" id="1_53wtl"]
 [ext_resource type="Script" uid="uid://cfbooepxy64uy" path="res://custom_resources/card.gd" id="1_82nah"]
-[ext_resource type="Resource" uid="uid://cdcnwfmxpnsl4" path="res://characters/warrior/cards/warrior_axe_attack.tres" id="1_fmyo0"]
-[ext_resource type="Resource" uid="uid://dq52fvba1r53x" path="res://characters/warrior/cards/warrior_block.tres" id="2_kumcs"]
-[ext_resource type="Resource" uid="uid://gax1olkg5gjx" path="res://characters/warrior/cards/warrior_slash.tres" id="3_rkdty"]
-[ext_resource type="Resource" uid="uid://hwjoye2urt2m" path="res://characters/warrior/cards/warrior_heal.tres" id="5_svald"]
+[ext_resource type="Resource" uid="uid://cdcnwfmxpnsl4" path="res://characters/warrior/cards/warrior_axe_attack/warrior_axe_attack.tres" id="1_fmyo0"]
+[ext_resource type="Resource" uid="uid://dq52fvba1r53x" path="res://characters/warrior/cards/warrior_block/warrior_block.tres" id="2_kumcs"]
+[ext_resource type="Resource" uid="uid://gax1olkg5gjx" path="res://characters/warrior/cards/warrior_slash/warrior_slash.tres" id="3_rkdty"]
+[ext_resource type="Resource" uid="uid://hwjoye2urt2m" path="res://characters/warrior/cards/warrior_heal/warrior_heal.tres" id="5_svald"]
 
 [resource]
 script = ExtResource("1_53wtl")

@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://custom_resources/card.gd" id="1_roqpn"]
 [ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="2_ok3jc"]
-[ext_resource type="Resource" uid="uid://memjku1kpjuv" path="res://characters/warrior/cards/warrior_big_slam.tres" id="2_swr2c"]
-[ext_resource type="Resource" uid="uid://gax1olkg5gjx" path="res://characters/warrior/cards/warrior_slash.tres" id="4_1lhy6"]
-[ext_resource type="Resource" uid="uid://hwjoye2urt2m" path="res://characters/warrior/cards/warrior_heal.tres" id="5_1l4n4"]
-[ext_resource type="Resource" uid="uid://cr5g38475tmir" path="res://characters/warrior/cards/warrior_true_strengh.tres" id="5_4mj8v"]
-[ext_resource type="Resource" uid="uid://cytyef5rxqgk2" path="res://characters/warrior/cards/warrior_quick_strike.tres" id="6_cqs6r"]
-[ext_resource type="Resource" uid="uid://dcimfgj0hp7h7" path="res://characters/warrior/cards/warrior_boomerang.tres" id="7_sp25h"]
+[ext_resource type="Resource" uid="uid://memjku1kpjuv" path="res://characters/warrior/cards/warrior_big_slam/warrior_big_slam.tres" id="2_swr2c"]
+[ext_resource type="Resource" uid="uid://gax1olkg5gjx" path="res://characters/warrior/cards/warrior_slash/warrior_slash.tres" id="4_1lhy6"]
+[ext_resource type="Resource" uid="uid://hwjoye2urt2m" path="res://characters/warrior/cards/warrior_heal/warrior_heal.tres" id="5_1l4n4"]
+[ext_resource type="Resource" uid="uid://cr5g38475tmir" path="res://characters/warrior/cards/warrior_true_strengh/warrior_true_strengh.tres" id="5_4mj8v"]
+[ext_resource type="Resource" uid="uid://cytyef5rxqgk2" path="res://characters/warrior/cards/warrior_quick_strike/warrior_quick_strike.tres" id="6_cqs6r"]
+[ext_resource type="Resource" uid="uid://dcimfgj0hp7h7" path="res://characters/warrior/cards/warrior_boomerang/warrior_boomerang.tres" id="7_sp25h"]
 
 [resource]
 script = ExtResource("2_ok3jc")

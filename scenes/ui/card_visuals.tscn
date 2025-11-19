@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bm4uvirkq867x" path="res://scenes/ui/card_visuals.gd" id="2_1gayj"]
 [ext_resource type="StyleBox" uid="uid://bxi0781rx1347" path="res://scenes/card_ui/card_base_stylebox.tres" id="2_b5o67"]
 [ext_resource type="Texture2D" uid="uid://c6rme2o6dyaoj" path="res://art/tile_0104.png" id="3_qpkl8"]
-[ext_resource type="Resource" uid="uid://hwjoye2urt2m" path="res://characters/warrior/cards/warrior_heal.tres" id="3_tl08d"]
+[ext_resource type="Resource" uid="uid://hwjoye2urt2m" path="res://characters/warrior/cards/warrior_heal/warrior_heal.tres" id="3_tl08d"]
 [ext_resource type="Texture2D" uid="uid://bab1q7boq8yhk" path="res://art/rarity.png" id="4_7fybx"]
 [ext_resource type="FontFile" uid="uid://c5h1i6tnhqq6v" path="res://art/fusion-pixel-12px-proportional-zh_hans.ttf" id="5_70ilw"]
 

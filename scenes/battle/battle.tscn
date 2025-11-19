@@ -85,6 +85,7 @@ player = NodePath("../Player")
 hand = NodePath("../BattleUI/Hand")
 
 [node name="BattleUI" type="CanvasLayer" parent="." groups=["ui_layer"]]
+layer = 4
 script = ExtResource("7_qepid")
 
 [node name="Hand" type="HBoxContainer" parent="BattleUI" node_paths=PackedStringArray("player")]
@@ -130,7 +131,7 @@ offset_bottom = -61.0
 grow_horizontal = 0
 grow_vertical = 0
 theme = ExtResource("15_fkra7")
-text = "End Turn"
+text = "UI_END_TURN"
 
 [node name="DrawPileButton" parent="BattleUI" node_paths=PackedStringArray("counter") instance=ExtResource("19_1bs2l")]
 unique_name_in_owner = true

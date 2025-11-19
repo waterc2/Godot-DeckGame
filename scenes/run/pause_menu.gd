@@ -7,11 +7,16 @@ signal save_and_quit
 @onready var save_and_quit_button: Button = %SaveAndQuitButton
 @onready var bgm_mute_checkbox: CheckBox = %BGMMuteCheckbox
 @onready var sfx_mute_checkbox: CheckBox = %SFXMuteCheckbox
+@onready var bgm_label: Label = %BGMLabel
+@onready var sfx_label: Label = %SFXLabel
 
 const AUDIO_BUS_BGM = "Music"
 const AUDIO_BUS_SFX = "SFX"
 
 func _ready() -> void:
+	bgm_label.text = tr("UI_MUTE_BGM")
+	sfx_label.text = tr("UI_MUTE_SFX")
+	
 	back_to_game_button.pressed.connect(_unpause)
 	save_and_quit_button.pressed.connect(_on_save_and_quit_button_pressed)
 	

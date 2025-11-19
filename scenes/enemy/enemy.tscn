@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cwltsnjychan8"]
 
 [ext_resource type="Script" uid="uid://ciqh17yqv3oax" path="res://scenes/enemy/enemy.gd" id="1_7mo5q"]
-[ext_resource type="Texture2D" uid="uid://bvoxw0masrga5" path="res://art/art-AI/crab.png" id="2_5ij5a"]
+[ext_resource type="Texture2D" uid="uid://bvoxw0masrga5" path="res://enemies/crab/crab.png" id="2_5ij5a"]
 [ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="2_wt4pu"]
 [ext_resource type="PackedScene" uid="uid://cdji7dgmildip" path="res://scenes/ui/stats_ui.tscn" id="3_kx7lw"]
 [ext_resource type="PackedScene" uid="uid://disjjd411uo7t" path="res://scenes/ui/intent_ui.tscn" id="5_o72fv"]

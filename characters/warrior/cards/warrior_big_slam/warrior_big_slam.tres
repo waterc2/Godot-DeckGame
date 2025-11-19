@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://memjku1kpjuv"]
+
+[ext_resource type="Texture2D" uid="uid://44jbm5bqr4k" path="res://characters/warrior/cards/warrior_big_slam/tile_0117.png" id="1_lwc11"]
+[ext_resource type="Script" uid="uid://dig25f2v5urya" path="res://characters/warrior/cards/warrior_big_slam/warrior_big_slam.gd" id="2_epla8"]
+[ext_resource type="AudioStream" uid="uid://dixklg6g4jnsq" path="res://characters/warrior/cards/warrior_big_slam/slash.ogg" id="3_swkys"]
+
+[resource]
+script = ExtResource("2_epla8")
+id = "warrior_big_slam"
+target = 1
+cost = 2
+rarity = 1
+icon = ExtResource("1_lwc11")
+tooltip_text = "warrior_big_slam_tooltip_text"
+sound = ExtResource("3_swkys")

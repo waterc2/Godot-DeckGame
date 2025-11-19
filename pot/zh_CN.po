@@ -15,8 +15,16 @@ msgstr ""
 msgid "Map"
 msgstr "地图"
 
+#: scenes/run/run.gd
+msgid "run.map"
+msgstr "地图"
+
 #: scenes/run/run.tscn
 msgid "Battle"
+msgstr "战斗"
+
+#: scenes/run/run.gd
+msgid "run.battle"
 msgstr "战斗"
 
 #: scenes/run/run.tscn
@@ -29,6 +37,10 @@ msgstr "宝藏"
 
 #: scenes/run/run.tscn
 msgid "Reward"
+msgstr "奖励"
+
+#: scenes/run/run.gd
+msgid "run.reward"
 msgstr "奖励"
 
 #: scenes/run/run.tscn
@@ -56,14 +68,27 @@ msgstr "[center]对随机敌人造成 [color=\"ff0000\"]%s[/color] 伤害 %s 次
 msgid "Shop"
 msgstr "商店"
 
+#: scenes/run/run.gd
+#: scenes/shop/shop.gd
+msgid "common.shop"
+msgstr "商店"
+
 #: scenes/run/run.tscn
 #: scenes/treasure/treasure.tscn
 msgid "Treasure"
 msgstr "宝藏"
 
+#: scenes/run/run.gd
+msgid "common.treasure"
+msgstr "宝藏"
+
 #: scenes/run/run.tscn
 #: scenes/campfire/campfire.tscn
 msgid "Campfire"
+msgstr "营火"
+
+#: scenes/run/run.gd
+msgid "common.campfire"
 msgstr "营火"
 
 #: scenes/run/run.tscn
@@ -80,20 +105,51 @@ msgid "Main Menu"
 msgstr "主菜单"
 
 #: scenes/run/run.tscn
+#: scenes/ui/battle_over_panel.tscn
+#: scenes/win_screen/win_screen.tscn
+msgid "UI_MAIN_MENU_BUTTON"
+msgstr "主菜单"
+
+#: scenes/ui/battle_over_panel.gd
+#: scenes/win_screen/win_screen.gd
+msgid "common.main_menu"
+msgstr "主菜单"
+
+#: scenes/run/run.tscn
 msgid "Switch Language"
 msgstr "切换语言"
+
+#: scenes/run/run.tscn
+msgid "UI_MUTE_BGM"
+msgstr "静音BGM"
+
+#: scenes/run/run.tscn
+msgid "UI_MUTE_SFX"
+msgstr "静音SFX"
 
 #: scenes/battle_reward/battle_reward.tscn
 msgid "Rewards"
 msgstr "奖励"
 
-#: scenes/battle_reward/battle_reward.tscn
-msgid "123"
-msgstr "123"
+#: scenes/battle_reward/battle_reward.gd
+msgid "battle_reward.title"
+msgstr "奖励"
+
+#: scenes/battle_reward/battle_reward.gd
+msgid "battle_reward.gold_text"
+msgstr "%s 金币"
+
+#: scenes/battle_reward/battle_reward.gd
+msgid "battle_reward.add_new_card"
+msgstr "添加新卡牌"
 
 #: scenes/battle_reward/battle_reward.tscn
 #: scenes/ui/main_menu.tscn
 msgid "Continue"
+msgstr "继续"
+
+#: scenes/battle_reward/battle_reward.gd
+msgid "common.continue"
 msgstr "继续"
 
 #: scenes/campfire/campfire.tscn
@@ -112,9 +168,18 @@ msgstr "遗物提示占位符"
 msgid "Leave"
 msgstr "离开"
 
+#: scenes/shop/shop.gd
+msgid "shop.leave"
+msgstr "离开"
+
 #: scenes/shop/shop_card.tscn
 #: scenes/shop/shop_relic.tscn
 msgid "Buy"
+msgstr "购买"
+
+#: scenes/shop/shop_card.gd
+#: scenes/shop/shop_relic.gd
+msgid "shop.buy"
 msgstr "购买"
 
 #: scenes/ui/battle_over_panel.tscn
@@ -122,19 +187,59 @@ msgid "Victorious!"
 msgstr "胜利！"
 
 #: scenes/ui/battle_over_panel.tscn
+msgid "BATTLE_OVER_VICTORIOUS_LABEL"
+msgstr "胜利！"
+
+#: scenes/ui/battle_over_panel.tscn
+msgid "BATTLE_OVER_AWESOME_LABEL"
+msgstr "太棒了！"
+
+#: scenes/ui/battle_over_panel.tscn
 msgid "Awesome!"
+msgstr "太棒了！"
+
+#: scenes/ui/battle_over_panel.gd
+msgid "battle_over.title_victory"
+msgstr "胜利！"
+
+#: scenes/ui/battle_over_panel.gd
+msgid "battle_over.continue"
 msgstr "太棒了！"
 
 #: scenes/ui/card_pile_view.tscn
 msgid "Discard Pile"
 msgstr "弃牌堆"
 
+#: scenes/battle/battle.tscn
+msgid "UI_END_TURN"
+msgstr "结束回合"
+
+#: scenes/ui/battle_ui.gd
+msgid "UI_DRAW_PILE_TITLE"
+msgstr "抽牌堆"
+
+#: scenes/ui/battle_ui.gd
+msgid "UI_DISCARD_PILE_TITLE"
+msgstr "弃牌堆"
+
+#: scenes/run/run.gd
+msgid "UI_DECK_TITLE"
+msgstr "牌组"
+
 #: scenes/ui/card_rewards.tscn
 msgid "Skip"
 msgstr "跳过"
 
+#: scenes/ui/card_rewards.gd
+msgid "card_rewards.skip"
+msgstr "跳过"
+
 #: scenes/ui/card_rewards.tscn
 msgid "Take"
+msgstr "拾取"
+
+#: scenes/ui/card_rewards.gd
+msgid "card_rewards.take"
 msgstr "拾取"
 
 #: scenes/ui/card_tooltip_popup.tscn
@@ -143,11 +248,9 @@ msgstr "[center]恢复 [color=\"db396f\"]10[/color] 生命.[/center]"
 
 #: scenes/ui/card_visuals.tscn
 #: scenes/ui/gold_ui.gd
-msgid "0"
-msgstr "0"
 #: scenes/ui/character_selector.tscn
 msgid "Warrior"
-msgstr "战士"
+msgstr "战士: 3点能量，每回合抽4张牌"
 
 #: scenes/ui/character_selector.tscn
 msgid "Likes to slice things up."
@@ -157,17 +260,19 @@ msgstr "喜欢把东西切成碎片。"
 msgid "CHARACTER_SELECTOR_START_LABEL"
 msgstr "开始"
 
-#: scenes/ui/health_ui.tscn
-msgid "66"
-msgstr "66"
+#: scenes/ui/character_selector.gd
+msgid "character_selector.start"
+msgstr "开始"
 
 #: scenes/ui/health_ui.tscn
-msgid "/66"
-msgstr "/66"
 
 #: scenes/ui/main_menu.tscn
 msgid "My First\nNot Roguelike Deckbuild Game"
 msgstr "我的第一个\n非 Roguelike 卡牌构筑游戏"
+
+#: scenes/ui/main_menu.tscn
+msgid "MAIN_MENU_SUBTITLE_TEXT"
+msgstr "主菜单"
 
 #: scenes/ui/main_menu.tscn
 msgid "NewRun"
@@ -178,8 +283,6 @@ msgid "Exit"
 msgstr "退出"
 
 #: scenes/ui/mana_ui.tscn
-msgid "3/3"
-msgstr "3/3"
 
 #: scenes/ui/reward_button.tscn
 msgid "99 Gold"
@@ -191,6 +294,10 @@ msgstr "提示框描述 中文测试\n测试第二行内容\n测试第三行内�
 
 #: scenes/win_screen/win_screen.tscn
 msgid "You are victorious!"
+msgstr "你胜利了！"
+
+#: scenes/win_screen/win_screen.gd
+msgid "win_screen.title"
 msgstr "你胜利了！"
 
 #: common_cards/toxin.gd
@@ -245,10 +352,10 @@ msgid "warrior_big_slam_tooltip_text"
 msgstr "[center]造成 [color=\"ff0000\"]%s[/color] 伤害, %s [color=\"ffdf00\"]重伤[/color].[/center]"
 
 msgid "assassin_character_name"
-msgstr "Assassin"
+msgstr "刺客"
 
 msgid "assassin_description"
-msgstr "Sneaky"
+msgstr "狡猾但脆弱"
 
 msgid "warrior_block_tooltip_text"
 msgstr "[center]获得 [color=\"0044ff\"]%s[/color] 护盾.[/center]"
@@ -266,16 +373,16 @@ msgid "warrior_true_strengh_tooltip_text"
 msgstr "[center]在每回合开始时，获得 %s [color=\"ffdf00\"]强壮[/color].[/center] 损坏"
 
 msgid "wizard_character_name"
-msgstr "Wizard"
+msgstr "巫师"
 
 msgid "wizard_description"
-msgstr "Years of wisdom."
+msgstr "岁月给与智慧"
 
 msgid "mana_potion_tooltip"
 msgstr "[color=\"ffdf00\"]充能魔力瓶[/color]\n战斗开始时，获得 %s 魔力。"
 
 msgid "reinforced_armor_relic_name"
-msgstr "Reinforced_armor"
+msgstr "强化护甲"
 
 msgid "reinforced_armor_tooltip"
 msgstr "[color=\"ffdf00\"]强化护甲[/color]\n在你回合结束时，获得 %s 护甲。"

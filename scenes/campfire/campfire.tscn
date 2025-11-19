@@ -186,6 +186,7 @@ size_flags_horizontal = 4
 text = "Rest"
 
 [node name="Description" type="Label" parent="UILayer/UI"]
+unique_name_in_owner = true
 layout_mode = 2
 text = "CAMPFIRE_REST_HEAL_TEXT"
 horizontal_alignment = 1

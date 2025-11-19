@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dq52fvba1r53x"]
+
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://characters/warrior/cards/warrior_block/tile_0102.png" id="1_2kbco"]
+[ext_resource type="Script" uid="uid://h8l0wgu8ul4v" path="res://characters/warrior/cards/warrior_block/warrior_block.gd" id="1_54tpb"]
+[ext_resource type="AudioStream" uid="uid://df64e7qat73gs" path="res://characters/warrior/cards/warrior_block/block.ogg" id="3_7vbpv"]
+
+[resource]
+script = ExtResource("1_54tpb")
+id = "warrior_block"
+type = 1
+cost = 1
+icon = ExtResource("1_2kbco")
+tooltip_text = "warrior_block_tooltip_text"
+sound = ExtResource("3_7vbpv")

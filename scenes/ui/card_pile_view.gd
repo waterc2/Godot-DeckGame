@@ -11,8 +11,6 @@ const CARD_MENU_UI_SCENE := preload("res://scenes/ui/card_menu_ui.tscn")
 @onready var back_button: Button = %BackButton
 
 func _ready() -> void:
-	title.text = tr("card_pile.discard_pile")
-	back_button.text = tr("common.back")
 	back_button.pressed.connect(hide)
 
 	for card: Node in cards.get_children():
