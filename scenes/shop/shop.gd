@@ -20,9 +20,13 @@ const SHOP_RELIC = preload("res://scenes/shop/shop_relic.tscn")
 @onready var blink_timer: Timer = %BlinkTimer
 @onready var card_tooltip_popup: CardTooltipPopup = %CardTooltipPopup
 @onready var modifier_handler: ModifierHandler = $ModifierHandler
+@onready var title_label: Label = $UILayer/Title
+@onready var leave_button: Button = $UILayer/Leave
 
 
 func _ready() -> void:
+	title_label.text = tr("common.shop")
+	leave_button.text = tr("shop.leave")
 	for shop_card: ShopCard in cards.get_children():
 		shop_card.queue_free()
 		

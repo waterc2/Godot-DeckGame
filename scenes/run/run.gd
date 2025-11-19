@@ -47,6 +47,13 @@ func _ready() -> void:
 		RunStartup.Type.CONTINUED_RUN:
 			_load_run()
 
+	map_button.text = tr("run.map")
+	battle_button.text = tr("run.battle")
+	shop_button.text = tr("common.shop")
+	treasure_button.text = tr("common.treasure")
+	rewards_button.text = tr("run.reward")
+	campfire_button.text = tr("common.campfire")
+
 
 func _start_run() -> void:
 	stats = RunStats.new()

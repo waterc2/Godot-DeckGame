@@ -12,6 +12,10 @@ const RELIC_UI = preload("res://scenes/relic_handler/relic_ui.tscn")
 @onready var gold_cost := RNG.instance.randi_range(100, 300)
 
 
+func _ready() -> void:
+	buy_button.text = tr("shop.buy")
+
+
 func update(run_stats: RunStats) -> void:
 	if not relic_container or not price or not buy_button:
 		return

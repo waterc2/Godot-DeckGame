@@ -114,7 +114,7 @@ offset_left = 42.0
 offset_top = 2.0
 offset_right = 142.0
 offset_bottom = 74.0
-text = "Shop"
+text = ""
 label_settings = SubResource("LabelSettings_dfdls")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -124,7 +124,7 @@ offset_left = 51.0
 offset_top = 88.0
 offset_right = 131.0
 offset_bottom = 116.0
-text = "Leave"
+text = ""
 
 [node name="ShopContent" type="VBoxContainer" parent="UILayer"]
 anchors_preset = 8

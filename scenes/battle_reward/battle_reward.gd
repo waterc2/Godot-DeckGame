@@ -5,15 +5,17 @@ extends Control
 const CARD_REWARDS = preload("res://scenes/ui/card_rewards.tscn")
 const REWARD_BUTTON = preload("res://scenes/ui/reward_button.tscn")
 const GOLD_ICON := preload("res://art/gold.png")
-const GOLD_TEXT := "%s gold"
+const GOLD_TEXT := "battle_reward.gold_text"
 const CARD_ICON := preload("res://art/rarity.png")
-const CARD_TEXT := "Add New Card"
+const CARD_TEXT := "battle_reward.add_new_card"
 
 @export var run_stats: RunStats
 @export var character_stats: CharacterStats
 @export var relic_handler: RelicHandler
 
 @onready var rewards: VBoxContainer = %Rewards
+@onready var title_label: Label = $VBoxContainer/Label
+@onready var back_button: Button = $VBoxContainer/BackButton
 
 var card_reward_total_weight := 0.0
 var card_rarity_weights := {
@@ -23,6 +25,8 @@ var card_rarity_weights := {
 }
 
 func _ready() -> void:
+	title_label.text = tr("battle_reward.title")
+	back_button.text = tr("common.continue")
 	for node: Node in rewards.get_children():
 		node.queue_free()
 	
@@ -30,7 +34,7 @@ func _ready() -> void:
 func add_gold_reward(amount: int) -> void:
 	var gold_reward := REWARD_BUTTON.instantiate() as RewardButton
 	gold_reward.reward_icon = GOLD_ICON
-	gold_reward.reward_text = GOLD_TEXT % amount
+	gold_reward.reward_text = tr(GOLD_TEXT) % amount
 	gold_reward.pressed.connect(_on_gold_reward_taken.bind(amount))
 	rewards.add_child.call_deferred(gold_reward)
 
@@ -38,7 +42,7 @@ func add_gold_reward(amount: int) -> void:
 func add_card_reward() -> void:
 	var card_reward := REWARD_BUTTON.instantiate() as RewardButton
 	card_reward.reward_icon = CARD_ICON
-	card_reward.reward_text = CARD_TEXT
+	card_reward.reward_text = tr(CARD_TEXT)
 	card_reward.pressed.connect(_show_card_rewards)
 	rewards.add_child.call_deferred(card_reward)
 

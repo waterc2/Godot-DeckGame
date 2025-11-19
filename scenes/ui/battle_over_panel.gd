@@ -11,6 +11,9 @@ enum Type {WIN, LOSE}
 
 
 func _ready() -> void:
+	label.text = tr("battle_over.title_victory")
+	continue_button.text = tr("battle_over.continue")
+	main_menu_button.text = tr("common.main_menu")
 	continue_button.pressed.connect(func(): Events.battle_won.emit())
 	main_menu_button.pressed.connect(get_tree().change_scene_to_file.bind(MAIN_MENU))
 	Events.battle_over_screen_requested.connect(show_screen)

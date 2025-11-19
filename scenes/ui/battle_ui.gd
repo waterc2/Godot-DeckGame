@@ -17,7 +17,14 @@ func _ready() -> void:
 	Events.player_hand_drawn.connect(_on_player_hand_drawn)
 	end_turn_button.pressed.connect(_on_end_turn_button_pressed)
 	draw_pile_button.pressed.connect(draw_pile_view.show_current_view.bind("Draw Pile", true))
-	discard_pile_button.pressed.connect(discard_pile_view.show_current_view.bind("Discard Pile"))
+	discard_pile_button.pressed.connect(discard_pile_view.show_current_view.bind(tr("UI_DISCARD_PILE_TITLE")))
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventScreenTouch and event.pressed:
+		var picked: Node = get_viewport().gui_pick(event.position)
+		if not _get_parent_card_ui(picked):
+			CardBaseState.clear_sticky_tooltip()
 
 
 func initialize_card_pile_ui() -> void:
@@ -31,6 +38,15 @@ func _set_char_stats(value: CharacterStats) -> void:
 	char_stats = value
 	mana_ui.char_stats = char_stats
 	hand.char_stats = char_stats
+
+
+func _get_parent_card_ui(node: Node) -> CardUI:
+	var current := node
+	while current:
+		if current is CardUI:
+			return current
+		current = current.get_parent()
+	return null
 
 
 func _on_player_hand_drawn() -> void:

@@ -187,7 +187,7 @@ text = "Rest"
 
 [node name="Description" type="Label" parent="UILayer/UI"]
 layout_mode = 2
-text = "+ 30% HP"
+text = "CAMPFIRE_REST_HEAL_TEXT"
 horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

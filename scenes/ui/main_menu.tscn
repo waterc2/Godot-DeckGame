@@ -54,8 +54,7 @@ offset_right = 192.5
 offset_bottom = -48.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "My First
-Not Roguelike Deckbuild Game"
+text = "MAIN_MENU_SUBTITLE_TEXT"
 label_settings = SubResource("LabelSettings_bg2k7")
 horizontal_alignment = 1
 vertical_alignment = 1

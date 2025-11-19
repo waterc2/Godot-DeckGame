@@ -56,4 +56,4 @@ func _on_relics_activated(type: Relic.Type) -> void:
 			player_handler.start_battle(char_stats)
 			battle_ui.initialize_card_pile_ui()
 		Relic.Type.END_OF_COMBAT:
-			Events.battle_over_screen_requested.emit("Victorious!", BattleOverPanel.Type.WIN)
+			Events.battle_over_screen_requested.emit(tr("BATTLE_OVER_VICTORIOUS_LABEL"), BattleOverPanel.Type.WIN)

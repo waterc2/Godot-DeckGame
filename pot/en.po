@@ -104,6 +104,10 @@ msgstr "Rest"
 msgid "+ 30% HP"
 msgstr "+ %s HP"
 
+#: scenes/relic_handler/relic_tooltip.tscn
+msgid "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
+msgstr "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
+
 #: scenes/shop/shop.tscn
 msgid "Leave"
 msgstr "Leave"
@@ -137,6 +141,10 @@ msgstr "Take"
 msgid "[center]Heal for [color=\"db396f\"]10[/color] HP.[/center]"
 msgstr "[center]Heal for [color=\"db396f\"]10[/color] HP.[/center]"
 
+#: scenes/ui/card_visuals.tscn
+#: scenes/ui/gold_ui.gd
+msgid "0"
+msgstr "0"
 #: scenes/ui/character_selector.tscn
 msgid "Warrior"
 msgstr "Warrior"
@@ -146,8 +154,16 @@ msgid "Likes to slice things up."
 msgstr "Likes to slice things up."
 
 #: scenes/ui/character_selector.tscn
-msgid "Start\n"
-msgstr "Start\n"
+msgid "CHARACTER_SELECTOR_START_LABEL"
+msgstr "Start"
+
+#: scenes/ui/health_ui.tscn
+msgid "66"
+msgstr "66"
+
+#: scenes/ui/health_ui.tscn
+msgid "/66"
+msgstr "/66"
 
 #: scenes/ui/main_menu.tscn
 msgid "My First\nNot Roguelike Deckbuild Game"
@@ -161,9 +177,17 @@ msgstr "New Run"
 msgid "Exit"
 msgstr "Exit"
 
+#: scenes/ui/mana_ui.tscn
+msgid "3/3"
+msgstr "3/3"
+
 #: scenes/ui/reward_button.tscn
 msgid "99 Gold"
 msgstr "99 Gold"
+
+#: scenes/ui/tooltip.tscn
+msgid "Tooltip description Chinese test\nTest second line content\nTest third line content 31231232312312312321312312421432r343243"
+msgstr "Tooltip description Chinese test\nTest second line content\nTest third line content 31231232312312312321312312421432r343243"
 
 #: scenes/win_screen/win_screen.tscn
 msgid "You are victorious!"

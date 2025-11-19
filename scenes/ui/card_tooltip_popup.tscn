@@ -49,7 +49,7 @@ custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 mouse_filter = 2
 bbcode_enabled = true
-text = "[center]恢复 [color=\"db396f\"]10[/color] 生命.[/center]"
+text = "CARD_TOOLTIP_POPUP_HEAL_TEXT"
 fit_content = true
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

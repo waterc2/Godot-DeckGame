@@ -43,6 +43,6 @@ stretch_mode = 5
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
-text = "Buy"
+text = ""
 
 [connection signal="pressed" from="BuyButton" to="." method="_on_buy_button_pressed"]

@@ -35,7 +35,7 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Victorious!"
+text = "BATTLE_OVER_VICTORIOUS_LABEL"
 label_settings = SubResource("LabelSettings_si0k6")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -45,11 +45,11 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 24)
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Awesome!"
+text = "BATTLE_OVER_AWESOME_LABEL"
 
 [node name="MainMenuButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 24)
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Main Menu"
+text = "UI_MAIN_MENU_BUTTON"

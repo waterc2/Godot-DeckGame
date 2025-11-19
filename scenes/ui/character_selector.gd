@@ -10,10 +10,12 @@ const WARRIOR_STATS :=preload("res://characters/warrior/warrior.tres")
 @onready var title: Label = %Title
 @onready var description: Label = %Description
 @onready var character_portrait: TextureRect = %CharacterPortrait
+@onready var start_button: Button = $StartButton
 
 var current_character: CharacterStats : set = set_current_character
 
 func _ready() -> void:
+	start_button.text = tr("character_selector.start")
 	set_current_character(WARRIOR_STATS)
 
 func set_current_character(new_character: CharacterStats) -> void:

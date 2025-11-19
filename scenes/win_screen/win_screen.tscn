@@ -64,7 +64,7 @@ theme_override_constants/separation = 40
 [node name="Message" type="Label" parent="VboxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "You are victorious!"
+text = "WIN_SCREEN_VICTORY_TEXT"
 label_settings = SubResource("LabelSettings_b5qy7")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -73,6 +73,6 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(100, 28)
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Main Menu"
+text = "UI_MAIN_MENU_BUTTON"
 
 [connection signal="pressed" from="VboxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

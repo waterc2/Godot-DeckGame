@@ -154,8 +154,8 @@ msgid "Likes to slice things up."
 msgstr "喜欢把东西切成碎片。"
 
 #: scenes/ui/character_selector.tscn
-msgid "Start\n"
-msgstr "开始\n"
+msgid "CHARACTER_SELECTOR_START_LABEL"
+msgstr "开始"
 
 #: scenes/ui/health_ui.tscn
 msgid "66"

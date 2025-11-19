@@ -39,6 +39,4 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/line_separation = 2
 bbcode_enabled = true
-text = "Tooltip decription 测试中文
-测试第二行内容
-测试第3行内容31231232312312312321312312421432r343243"
+text = "UI_TOOLTIP_PLACEHOLDER_TEXT"

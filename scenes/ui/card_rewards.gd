@@ -16,6 +16,8 @@ var selected_card: Card
 
 
 func _ready() -> void:
+	skip_card_reward.text = tr("card_rewards.skip")
+	take_button.text = tr("card_rewards.take")
 	_clear_rewards()
 
 	take_button.pressed.connect(

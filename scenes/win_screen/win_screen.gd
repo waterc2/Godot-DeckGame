@@ -5,6 +5,13 @@ const MAIN_MENU_PATH = "res://scenes/ui/main_menu.tscn"
 @export var character: CharacterStats : set = set_character
 
 @onready var character_portrait: TextureRect = %CharacterPortrait
+@onready var message_label: Label = %Message
+@onready var main_menu_button: Button = $VboxContainer/MainMenuButton
+
+
+func _ready() -> void:
+	message_label.text = tr("win_screen.title")
+	main_menu_button.text = tr("common.main_menu")
 
 
 func set_character(new_character: CharacterStats) -> void:

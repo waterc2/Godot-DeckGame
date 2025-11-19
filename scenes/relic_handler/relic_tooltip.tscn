@@ -49,7 +49,7 @@ custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 mouse_filter = 2
 bbcode_enabled = true
-text = "Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip Relic Tooltip "
+text = "RELIC_TOOLTIP_PLACEHOLDER_TEXT"
 fit_content = true
 
 [node name="BackButton" type="Button" parent="."]

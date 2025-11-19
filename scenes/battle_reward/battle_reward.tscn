@@ -59,7 +59,7 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Rewards"
+text = ""
 label_settings = SubResource("LabelSettings_n7mei")
 
 [node name="RewardContainer" type="PanelContainer" parent="VBoxContainer"]
@@ -81,17 +81,17 @@ layout_mode = 2
 [node name="GoldReward" parent="VBoxContainer/RewardContainer/MarginContainer/Rewards" instance=ExtResource("3_qmtf4")]
 layout_mode = 2
 reward_icon = ExtResource("4_xxyqa")
-reward_text = "123"
+reward_text = "battle_reward.placeholder_123"
 
 [node name="CardReward" parent="VBoxContainer/RewardContainer/MarginContainer/Rewards" instance=ExtResource("3_qmtf4")]
 layout_mode = 2
 reward_icon = ExtResource("5_wgcxk")
-reward_text = "Add New Card"
+reward_text = "battle_reward.add_new_card"
 
 [node name="BackButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Continue"
+text = ""
 
 [connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

@@ -14,6 +14,10 @@ const CARD_MENU_UI = preload("res://scenes/ui/card_menu_ui.tscn")
 var current_card_ui: CardMenuUI
 
 
+func _ready() -> void:
+	buy_button.text = tr("shop.buy")
+
+
 func update(run_stats: RunStats) -> void:
 	if not card_container or not price or not buy_button:
 		return

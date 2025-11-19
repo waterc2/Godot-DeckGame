@@ -37,6 +37,6 @@ stretch_mode = 5
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 1
-text = "99 Gold"
+text = "REWARD_BUTTON_DEFAULT_TEXT"
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
