@@ -14,20 +14,21 @@
 
 [sub_resource type="Resource" id="Resource_iy0ku"]
 script = ExtResource("4_7i2b2")
-base_text = "2*%s"
+base_text = "%s"
 icon = ExtResource("3_swvya")
-tooltip = "造成%s 伤害2次"
+tooltip = "enemy.bat.attack"
 
 [sub_resource type="Resource" id="Resource_vctye"]
 script = ExtResource("4_7i2b2")
 base_text = "%s"
 icon = ExtResource("7_u4usy")
-tooltip = "吸血，造成%s 伤害并恢复相应的生命。"
+tooltip = "enemy.bat.blood_sucking"
 
 [sub_resource type="Resource" id="Resource_kah5i"]
 script = ExtResource("4_7i2b2")
 base_text = "%s"
 icon = ExtResource("7_83tf1")
+tooltip = "enemy.block"
 
 [node name="BatEnemyAI" type="Node"]
 script = ExtResource("1_vc2im")

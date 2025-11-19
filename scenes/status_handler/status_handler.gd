@@ -52,7 +52,9 @@ func add_status(status: Status) -> void:
 	
 	# If it's stackable, stack it
 	if status.stack_type == Status.StackType.INTENSITY:
-		_get_status(status.id).stacks += status.stacks
+		var existing_status := _get_status(status.id)
+		existing_status.stacks += status.stacks
+		# stacks change will trigger status_changed signal, which will update modifiers
 	
 
 func _has_status(id: String) -> bool:

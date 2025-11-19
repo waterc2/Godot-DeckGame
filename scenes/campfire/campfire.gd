@@ -12,8 +12,10 @@ const HEAL_PERCENTAGE := 0.3
 
 func _ready() -> void:
 	# Set description text dynamically with percentage
-	var percentage_string = "%d%%" % (HEAL_PERCENTAGE * 100)
-	description_label.text = tr("+ 30% HP") % [percentage_string]
+	var percentage_value = int(HEAL_PERCENTAGE * 100)
+	var translated_text = tr("CAMPFIRE_REST_HEAL_TEXT")
+	# Replace %s with the actual percentage value
+	description_label.text = translated_text.replace("%s", str(percentage_value))
 
 
 func _on_rest_button_pressed() -> void:

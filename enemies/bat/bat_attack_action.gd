@@ -35,4 +35,5 @@ func update_intent_text() -> void:
 		return
 	
 	var modified_dmg := player.modifier_handler.get_modified_value_by_type(damage, Modifier.Type.DMG_TAKEN)
-	intent.current_text = intent.base_text % modified_dmg
+	# Display as "4*2" to show it attacks twice, but tooltip will still use base_text
+	intent.current_text = "%s*2" % modified_dmg

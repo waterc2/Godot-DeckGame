@@ -1,6 +1,6 @@
 extends EnemyAction
 
-@export var block := 15
+@export var block := 10
 
 
 func perform_action() -> void:
@@ -17,6 +17,8 @@ func perform_action() -> void:
 			Events.enemy_action_completed.emit(enemy)
 	)
 
+
 func update_intent_text() -> void:
 	if intent:
 		intent.current_text = intent.base_text % block
+

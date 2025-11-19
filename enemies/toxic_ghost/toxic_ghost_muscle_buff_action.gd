@@ -31,3 +31,7 @@ func perform_action() -> void:
 	SFXPlayer.play_sfx(sound)
 
 	Events.enemy_action_completed.emit(enemy)
+
+func update_intent_text() -> void:
+	if intent:
+		intent.current_text = intent.base_text % stacks_per_action

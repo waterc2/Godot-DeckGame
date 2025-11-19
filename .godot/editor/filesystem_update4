@@ -1,3 +1,11 @@
+res://scenes/enemy/enemy.gd
+res://scenes/enemy/enemy_handler.gd
+res://scenes/status_handler/status_handler.gd
+res://statuses/strength.gd
+res://custom_resources/status.gd
+res://scenes/ui/status_tooltip.gd
+res://enemies/bat/bat_blood_sucking_action.gd
+res://statuses/true_strength_form.gd
+res://pot/en.po
 res://pot/zh_CN.po
-res://scenes/card_ui/tooltip_stylebox.tres
-res://scenes/battle/battle.tscn
+res://scenes/campfire/campfire.gd

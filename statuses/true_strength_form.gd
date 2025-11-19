@@ -15,3 +15,12 @@ func apply_status(target: Node) -> void:
 	status_effect.execute([target])
 	
 	status_applied.emit(self)
+
+
+func get_tooltip() -> String:
+	var translated_text = tr(tooltip)
+	if translated_text.contains("%s"):
+		# Use stacks_per_turn for True Strength Form
+		return translated_text.replace("%s", "{0}").format([stacks_per_turn])
+	
+	return translated_text

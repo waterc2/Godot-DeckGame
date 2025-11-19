@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" uid="uid://cwltsnjychan8" path="res://scenes/enemy/enemy.tscn" id="1_enemy_scene"]
+[ext_resource type="Resource" path="res://enemies/wolf_0/wolf_0_enemy.tres" id="2_wolf_0"]
+
+[node name="Tier1Wolf0" type="Node2D"]
+
+[node name="Enemy" parent="." instance=ExtResource("1_enemy_scene")]
+position = Vector2(410, 120)
+stats = ExtResource("2_wolf_0")
+

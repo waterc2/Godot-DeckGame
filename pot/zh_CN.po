@@ -156,8 +156,8 @@ msgstr "继续"
 msgid "Rest"
 msgstr "休息"
 
-#: scenes/campfire/campfire.tscn
-msgid "+ 30% HP"
+#: scenes/campfire/campfire.gd
+msgid "CAMPFIRE_REST_HEAL_TEXT"
 msgstr "+ %s 生命值"
 
 #: scenes/relic_handler/relic_tooltip.tscn
@@ -395,3 +395,24 @@ msgstr "破甲：收到的伤害增加%s，持续%s回合。"
 
 msgid "weak_tooltip"
 msgstr "虚弱：造成的伤害减少%s，持续%s回合。"
+
+msgid "enemy.attack"
+msgstr "造成%s 伤害。"
+
+msgid "enemy.block"
+msgstr "获得%s 格挡。"
+
+msgid "enemy.bat.attack"
+msgstr "造成%s 伤害2次。"
+
+msgid "enemy.bat.blood_sucking"
+msgstr "吸血，造成%s 伤害并恢复相应的生命。"
+
+msgid "enemy.toxic_ghost.attack"
+msgstr "造成%s 伤害并添加一张牌到玩家牌组。"
+
+msgid "enemy.toxic_ghost.muscle_buff"
+msgstr "获得%s 强壮。"
+
+msgid "enemy.wolf_0.strength_buff"
+msgstr "所有敌人获得%s 强壮。"

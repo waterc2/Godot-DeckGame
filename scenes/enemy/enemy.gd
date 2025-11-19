@@ -31,6 +31,7 @@ func set_enemy_stats(value: EnemyStats) -> void:
 	
 	if not stats.stats_changed.is_connected(update_stats):
 		stats.stats_changed.connect(update_stats)
+		# Update action when stats change (e.g., health changes) to check conditional actions
 		stats.stats_changed.connect(update_action)
 	
 	update_enemy()
@@ -56,7 +57,10 @@ func update_action() -> void:
 		return	
 	if not current_action:
 		current_action = enemy_action_picker.get_action()
-		return	
+		update_intent()
+		return
+	# Check for conditional actions (like bat blood sucking when health is low)
+	# This allows conditional actions to update when stats change (e.g., health)
 	var new_conditional_action := enemy_action_picker.get_first_conditional_action()
 	if new_conditional_action and current_action != new_conditional_action:
 		current_action = new_conditional_action

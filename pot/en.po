@@ -156,8 +156,8 @@ msgstr "Continue"
 msgid "Rest"
 msgstr "Rest"
 
-#: scenes/campfire/campfire.tscn
-msgid "+ 30% HP"
+#: scenes/campfire/campfire.gd
+msgid "CAMPFIRE_REST_HEAL_TEXT"
 msgstr "+ %s HP"
 
 #: scenes/relic_handler/relic_tooltip.tscn
@@ -394,3 +394,24 @@ msgstr "Vulnerable: Take %s more damage, lasts for %s turns."
 
 msgid "weak_tooltip"
 msgstr "Weak: Deal %s less damage, lasts for %s turns."
+
+msgid "enemy.attack"
+msgstr "Deal %s damage."
+
+msgid "enemy.block"
+msgstr "Gain %s Block."
+
+msgid "enemy.bat.attack"
+msgstr "Deal %s damage 2 times."
+
+msgid "enemy.bat.blood_sucking"
+msgstr "Lifesteal: Deal %s damage and restore equal health."
+
+msgid "enemy.toxic_ghost.attack"
+msgstr "Deal %s damage and add a card to player's deck."
+
+msgid "enemy.toxic_ghost.muscle_buff"
+msgstr "Gain %s Strength."
+
+msgid "enemy.wolf_0.strength_buff"
+msgstr "All enemies gain %s Strength."

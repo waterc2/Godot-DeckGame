@@ -1,0 +1,54 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scenes/enemy/enemy_action_picker.gd" id="1_enemy_picker"]
+[ext_resource type="Script" path="res://enemies/wolf_0/wolf_0_strength_buff_action.gd" id="2_strength_buff"]
+[ext_resource type="Script" path="res://enemies/wolf_0/wolf_0_attack_action.gd" id="3_attack"]
+[ext_resource type="Script" path="res://enemies/wolf_0/wolf_0_block_action.gd" id="4_block"]
+[ext_resource type="Texture2D" uid="uid://b2encov5tj60t" path="res://art/icons/strength.png" id="5_strength_icon"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://enemies/_common/tile_0103.png" id="6_attack_icon"]
+[ext_resource type="Texture2D" uid="uid://bi6pfjs32f820" path="res://enemies/_common/tile_0101.png" id="7_block_icon"]
+[ext_resource type="Script" path="res://custom_resources/intent.gd" id="8_intent"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://enemies/_common/enemy_block.ogg" id="9_block_sound"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://enemies/_common/enemy_attack.ogg" id="10_attack_sound"]
+
+[sub_resource type="Resource" id="Resource_strength_intent"]
+script = ExtResource("8_intent")
+base_text = "%s"
+icon = ExtResource("5_strength_icon")
+tooltip = "enemy.wolf_0.strength_buff"
+
+[sub_resource type="Resource" id="Resource_attack_intent"]
+script = ExtResource("8_intent")
+base_text = "%s"
+icon = ExtResource("6_attack_icon")
+tooltip = "enemy.attack"
+
+[sub_resource type="Resource" id="Resource_block_intent"]
+script = ExtResource("8_intent")
+base_text = "%s"
+icon = ExtResource("7_block_icon")
+tooltip = "enemy.block"
+
+[node name="Wolf0EnemyAI" type="Node"]
+script = ExtResource("1_enemy_picker")
+
+[node name="StrengthBuffAction" type="Node" parent="."]
+script = ExtResource("2_strength_buff")
+intent = SubResource("Resource_strength_intent")
+sound = ExtResource("9_block_sound")
+type = 0
+
+[node name="AttackAction" type="Node" parent="."]
+script = ExtResource("3_attack")
+intent = SubResource("Resource_attack_intent")
+sound = ExtResource("10_attack_sound")
+type = 1
+chance_weight = 7.0
+
+[node name="BlockAction" type="Node" parent="."]
+script = ExtResource("4_block")
+intent = SubResource("Resource_block_intent")
+sound = ExtResource("9_block_sound")
+type = 1
+chance_weight = 3.0
+

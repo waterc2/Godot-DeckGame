@@ -31,7 +31,11 @@ func apply_status(_target: Node) -> void:
 func get_tooltip() -> String:
 	var translated_text = tr(tooltip)
 	if translated_text.contains("%s"):
-		return translated_text.replace("%s", "{0}").format([duration])
+		# Use stacks for INTENSITY type, duration for DURATION type
+		var value := duration
+		if stack_type == StackType.INTENSITY:
+			value = stacks
+		return translated_text.replace("%s", "{0}").format([value])
 	
 	return translated_text
 

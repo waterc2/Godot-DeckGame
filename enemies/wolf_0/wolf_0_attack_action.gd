@@ -1,16 +1,6 @@
-
 extends EnemyAction
 
-@export var damage := 5
-@export var hp_threshold := 12
-
-
-func is_performable() -> bool:
-	if not enemy or not target:
-		return false
-	var is_low := enemy.stats.health <= hp_threshold
-	return is_low
-
+@export var damage := 8
 
 
 func perform_action() -> void:
@@ -23,22 +13,20 @@ func perform_action() -> void:
 	var damage_effect := DamageEffect.new()
 	var target_array: Array[Node] = [target]
 	var modified_dmg: int = enemy.modifier_handler.get_modified_value_by_type(damage, Modifier.Type.DMG_DEALT)
+	
 	damage_effect.amount = modified_dmg
 	damage_effect.sound = sound
-
+	
 	tween.tween_property(enemy, "global_position", end, 0.4)
-	tween.tween_callback(damage_effect.execute.bind(target_array))	
-	tween.tween_interval(0.35)
-	var heal_effect := HealEffect.new()
-	heal_effect.amount = clampi(modified_dmg - target.stats.block, 0, modified_dmg)
-	tween.tween_callback(heal_effect.execute.bind([enemy]))
+	tween.tween_callback(damage_effect.execute.bind(target_array))
+	tween.tween_interval(0.4)
 	tween.tween_property(enemy, "global_position", start, 0.4)
 	
 	tween.finished.connect(
 		func():
 			Events.enemy_action_completed.emit(enemy)
 	)
-	
+
 
 func update_intent_text() -> void:
 	var player := target as Player
@@ -48,3 +36,4 @@ func update_intent_text() -> void:
 	var modified_dmg: int = player.modifier_handler.get_modified_value_by_type(damage, Modifier.Type.DMG_TAKEN)
 	var final_dmg: int = enemy.modifier_handler.get_modified_value_by_type(modified_dmg, Modifier.Type.DMG_DEALT)
 	intent.current_text = intent.base_text % final_dmg
+

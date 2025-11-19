@@ -13,19 +13,23 @@
 
 [sub_resource type="Resource" id="Resource_460vo"]
 script = ExtResource("3_a0hhr")
+base_text = "%s"
 icon = ExtResource("2_4nfct")
+tooltip = "enemy.toxic_ghost.muscle_buff"
 metadata/_custom_type_script = "uid://cwfhdvcw1qpee"
 
 [sub_resource type="Resource" id="Resource_hqwas"]
 script = ExtResource("3_a0hhr")
 base_text = "%s"
 icon = ExtResource("6_6alh0")
-tooltip = "攻击同时添加一张牌到玩家牌组"
+tooltip = "enemy.toxic_ghost.attack"
 metadata/_custom_type_script = "uid://cwfhdvcw1qpee"
 
 [sub_resource type="Resource" id="Resource_n3j28"]
 script = ExtResource("3_a0hhr")
+base_text = "%s"
 icon = ExtResource("9_hqwas")
+tooltip = "enemy.block"
 metadata/_custom_type_script = "uid://cwfhdvcw1qpee"
 
 [node name="ToxicGhostAI" type="Node"]
